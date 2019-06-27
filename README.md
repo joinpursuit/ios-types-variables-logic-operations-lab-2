@@ -103,12 +103,14 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-if year % 4 == 0 {
+if year % 400 == 0 {
 print("Leap year!")
-} else if year % 100 == 0 && year % 400 == 0 {
+} else if year % 100 == 0 {
+print("Not a leap year!")
+} else if year % 4 == 0 {
 print("Leap year!")
 } else {
-print("Not a leap year!")
+print("Not a leap year")
 }
 
 ```
