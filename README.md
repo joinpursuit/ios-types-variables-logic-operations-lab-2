@@ -146,8 +146,8 @@ var d = 4
 var smallestValue = a
 let array = [a,b,c,d]
 for index in 0...3 {
-if array[index] < smallestValue {
-    smallestValue = array[index]
+    if array[index] < smallestValue {
+        smallestValue = array[index]
     }
 }
 print(smallestValue)
