@@ -132,7 +132,7 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-if 0 <= randomNum <= 49 {
+if randomNum % 2 == 0 {
     print("heads")
 }
 else {
