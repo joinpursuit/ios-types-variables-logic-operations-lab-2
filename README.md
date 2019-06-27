@@ -87,9 +87,11 @@ var baconSpoils = 7
 var eggsSpoils = 21
 if baconAge > baconSpoils {
 print("throw out bacon")
-} else if eggsAge > eggsSpoils {
+}
+if eggsAge > eggsSpoils {
 print("throw out eggs")
-} else {
+}
+if baconAge < baconSpoils && eggsAge < eggsSpoils {
 print("you can cook bacon and eggs")
 }
 ```
