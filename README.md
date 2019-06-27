@@ -23,9 +23,8 @@ var grade3 = 5.0
 var yourGrade: Double = 10.0
 if yourGrade > (grade1 + grade2 + grade3)/3 {
     print("above average")
-}
-else {
-    print("below average")
+    } else {
+        print("below average")
 }
 ```
 
@@ -38,12 +37,11 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 if number != 0 {
-if number % 2 == 0 {
+    if number % 2 == 0 {
         print("even")
-        }
-        else {
-        print("odd")
-}
+            } else {
+                print("odd")
+                }
 }
 ```
 
@@ -56,12 +54,7 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-if a % b == 0 {
-    print("divisible")
-}
-else {
-    print("not divisible")
-}
+var isItDivisible = a % b == 0 ? "divisible" : "not divisible"
 ```
 
 ***
@@ -76,8 +69,7 @@ var c = 2
 
 if a == b || a == c || b == c {
     print("At least two variables have the same value")
-}
-else {
+} else {
     print("All the values are different")
 }
 ```
@@ -114,11 +106,10 @@ let year = 2014
 if year % 4 == 0 {
     if year % 100 == 0 && year % 400 != 0 {
         print("Not a leap year!")
-    }
-        else {
+    } else {
             print("Leap year!")
     }
-}
+} 
 else {
     print("Not a leap year!")
 }
@@ -134,8 +125,7 @@ let randomNum = Int.random(in: 0...100)
 
 if randomNum % 2 == 0 {
     print("heads")
-}
-else {
+} else {
     print("tails")
 }
 ```
@@ -158,7 +148,7 @@ let array = [a,b,c,d]
 for index in 0...3 {
 if array[index] < smallestValue {
     smallestValue = array[index]
-}
+    }
 }
 print(smallestValue)
 ```
