@@ -111,3 +111,262 @@ var d = 4
 ```
 
 ***
+## 16.Which of the following expressions evaluate to true?
+
+```swift
+a. 3 == 2 || 9 == 9
+b. !(3 > 3)
+c. !(true || false)
+d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
+e. !(3 != 3)
+
+```
+
+***
+## 17.
+### let x = 5 > 4
+### let y = 100 / 10 == 1
+### let z = 6
+
+### Given the above, which of the following expressions evaluate to true?
+
+```swift
+a. x && y
+b. x || y || z == 1
+c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
+d. (x && y) || z > 6
+e. !(z < 6) && !y && !x
+
+```
+***
+## 18.
+### let tru = "hello world" == "Hello World"
+### let fal = 7.0 / 2.0 == 3.5
+
+### Given the above, which of the following expressions evaluate to true?
+
+```swift
+a. tru && fal
+b. tru && false
+c. fal && true && !tru
+d. (fal && true && tru) || tru
+
+```
+
+***
+## 19. What is true about Integers in computers?
+
+```swift
+a. Integers must have a positive or negative sign always.
+b. The maximum value for Integers is +∞.
+c. Integer types in computers take up a fixed amount of memory.
+d. Integers may contain decimals.
+
+```
+
+
+***
+## 20. Select all the code snippets below that will compile.
+
+```swift
+a. let numberOfPages: Int = 500
+b. let numberOfChapters = "For Whom The Bell Tolls"
+c. let nameOfBook: Int = 14
+d. let yearPublished = "Nineteen-thirty-five"
+
+```
+
+***
+## 21. What will the code below print?  Complete this exercise without using an IDE (Integrated Developer Environment) or calculator 
+
+```swift
+var a = 20
+var b = 5
+var c = 4
+
+a += b
+b -= c
+b * (c + a)
+(b * c) + a
+b %= a
+b %= c
+
+print(a + b + c)
+
+```
+
+***
+## 22.let div = 11 / 4
+
+```swift
+1. The value of div is ____________________(or write "div1 will not compile")
+
+let div2 = 11.0 / 4.0
+2. The value of div2 is ________________________(or write "div2 will not compile")
+let isEqual = div == div2
+
+3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+
+
+```
+***
+## 23. var n = 7.5
+### What is true about the variable n?
+
+```swift
+a. n is a Float
+b. n is a Double
+c. n is a Decimal
+d. In is an Int
+
+```
+
+***
+## 24. What will happen when the code below is run?
+
+```swift
+
+let twelve: Double = 12.0
+let thirteen: Float = 13.0
+
+print(twelve + thirteen)
+
+
+a. It will print 25
+b. It will print 25.0
+c. It will not compile
+
+```
+
+***
+## 25. What are the differences between Double and Int in the numbers they can represent and how they store them?
+
+
+***
+## 26. What are the differences between Float and Double?
+
+
+***
+
+## 27. What will happen when the code below is run?
+
+```swift
+
+var width: Double = 49.8
+var extraWidth: Float = 10.1
+let totalWidth = width + extraWidth
+print(totalWidth)
+
+a. It will print 48.9
+b. It will print 50.0
+c. It will print 50
+d. It will give a compile-time error
+
+```
+***
+## 28. You are given a number a. Print the last digit of a.
+### var a = 123
+
+```swift
+
+Example 1
+Input: 
+var a = 123
+
+Output:
+3
+
+Example 2
+Input: 
+var a = 337
+
+Output:
+7
+
+
+```
+
+***
+
+## 29. Given an int, determine and print whether it is even or odd.
+
+```swift
+var number = 5
+
+Example 1
+Input: 
+var number = 6
+
+Expected Output: 
+Even
+
+```
+
+***
+
+## 29. You are given 2 Doubles a and b. Print their average
+
+```swift
+var a = 2.0
+var b = 5.0
+
+```
+
+
+***
+
+## 30. You are given 3 grades stored in 3 variables of type Double finalsGrade, midtermGrade, projectGrade. These grades are used to compute the grade for a class. finalsGrade represents 50% of the grade. midtermGrade represents 20% of the grade. projectGrade represents 30% of the final grade.
+
+### Print the grade for the class.
+
+```swift
+
+var finalsGrade = 2.0
+var midtermGrade = 4.0
+var projectGrade = 3.0
+
+```
+
+***
+
+## 31. You have the cost of a meal at a restaurant stored in a variable mealCost of type Double. You would like to leave a tip of a certain percentage. The percentage is stored in a variable tip of type Int.
+
+### Print the total cost of the meal.
+```swift
+
+Input: 
+var mealCost:Double = 3.5
+var tip:Int = 20
+
+
+Output:
+4.2
+
+```
+***
+
+## 32. You are given three grades obtained by 3 students in a class stored in variables grade1, grade2, grade3 of typeDouble. You are also given your grade in the class stored in a variable yourGrade of type Double. Print above average if your grade is greater than the class average or below average” otherwise.
+
+### Note: the average of the class includes your grade.
+```swift
+
+Input: 
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.0
+
+Output:
+"above average"
+
+```
+***
+
+## 33. A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
+
+### Print the total amount of wheat that the farmer will harvest.
+
+<img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
+
+```
+
