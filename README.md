@@ -211,16 +211,16 @@ d. In is an Int
 # Bonus 
 
 ***
-## 16. What are the differences between Double and Int in the numbers they can represent and how they store them?
+## 1. What are the differences between Double and Int in the numbers they can represent and how they store them?
 
 
 ***
-## 17. What are the differences between Float and Double?
+## 2. What are the differences between Float and Double?
 
 
 ***
 
-## 18. What will happen when the code below is run?
+## 3. What will happen when the code below is run?
 
 ```swift
 
@@ -236,7 +236,7 @@ d. It will give a compile-time error
 
 ```
 ***
-## 19. You are given a number a. Print the last digit of a.
+## 4. You are given a number a. Print the last digit of a.
 ### var a = 123
 
 ```swift
@@ -260,7 +260,7 @@ Output:
 
 ***
 
-## 20. Given an int, determine and print whether it is even or odd.
+## 5. Given an int, determine and print whether it is even or odd.
 
 ```swift
 var number = 5
@@ -276,7 +276,7 @@ Even
 
 ***
 
-## 21. You are given 2 Doubles a and b. Print their average
+## 6. You are given 2 Doubles a and b. Print their average
 
 ```swift
 var a = 2.0
@@ -287,7 +287,7 @@ var b = 5.0
 
 ***
 
-## 22. You are given 3 grades stored in 3 variables of type Double finalsGrade, midtermGrade, projectGrade. These grades are used to compute the grade for a class. finalsGrade represents 50% of the grade. midtermGrade represents 20% of the grade. projectGrade represents 30% of the final grade.
+## 7. You are given 3 grades stored in 3 variables of type Double finalsGrade, midtermGrade, projectGrade. These grades are used to compute the grade for a class. finalsGrade represents 50% of the grade. midtermGrade represents 20% of the grade. projectGrade represents 30% of the final grade.
 
 ### Print the grade for the class.
 
@@ -301,7 +301,7 @@ var projectGrade = 3.0
 
 ***
 
-## 23. You have the cost of a meal at a restaurant stored in a variable mealCost of type Double. You would like to leave a tip of a certain percentage. The percentage is stored in a variable tip of type Int.
+## 8. You have the cost of a meal at a restaurant stored in a variable mealCost of type Double. You would like to leave a tip of a certain percentage. The percentage is stored in a variable tip of type Int.
 
 ### Print the total cost of the meal.
 ```swift
@@ -317,7 +317,7 @@ Output:
 ```
 ***
 
-## 24. You are given three grades obtained by 3 students in a class stored in variables grade1, grade2, grade3 of typeDouble. You are also given your grade in the class stored in a variable yourGrade of type Double. Print above average if your grade is greater than the class average or below average” otherwise.
+## 9. You are given three grades obtained by 3 students in a class stored in variables grade1, grade2, grade3 of typeDouble. You are also given your grade in the class stored in a variable yourGrade of type Double. Print above average if your grade is greater than the class average or below average” otherwise.
 
 ### Note: the average of the class includes your grade.
 ```swift
@@ -334,7 +334,7 @@ Output:
 ```
 ***
 
-## 25. A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
+## 10. A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
 
