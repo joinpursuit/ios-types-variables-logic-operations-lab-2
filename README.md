@@ -111,7 +111,9 @@ var d = 4
 ```
 
 ***
-## 9.Which of the following expressions evaluate to true?
+## Question 9
+
+Which of the following expressions evaluate to true?
 
 ```swift
 a. 3 == 2 || 9 == 9
@@ -123,12 +125,13 @@ e. !(3 != 3)
 ```
 
 ***
-## 10.
-### let x = 5 > 4
-### let y = 100 / 10 == 1
-### let z = 6
+## Question 10
 
-### Given the above, which of the following expressions evaluate to true?
+Given the below, which of the following expressions evaluate to true?
+
+ let x = 5 > 4
+ let y = 100 / 10 == 1
+ let z = 6
 
 ```swift
 a. x && y
@@ -141,7 +144,9 @@ e. !(z < 6) && !y && !x
 
 
 ***
-## 11. What is true about Integers in computers?
+## Question 11
+
+What is true about Integers in computers?
 
 ```swift
 a. Integers must have a positive or negative sign always.
@@ -153,7 +158,9 @@ d. Integers may contain decimals.
 
 
 ***
-## 12. Select all the code snippets below that will compile.
+## Question 12
+
+Select all the code snippets below that will compile.
 
 ```swift
 a. let numberOfPages: Int = 500
@@ -164,7 +171,9 @@ d. let yearPublished = "Nineteen-thirty-five"
 ```
 
 ***
-## 13. What will the code below print?  Complete this exercise without using an IDE (Integrated Developer Environment) or calculator 
+## Question 13
+
+What will the code below print?  Complete this exercise without using an IDE (Integrated Developer Environment) or calculator 
 
 ```swift
 var a = 20
@@ -183,7 +192,9 @@ print(a + b + c)
 ```
 
 ***
-## 14.let div = 11 / 4
+## Question 14
+
+let div = 11 / 4
 
 ```swift
 1. The value of div is ____________________(or write "div1 will not compile")
@@ -197,8 +208,13 @@ let isEqual = div == div2
 
 ```
 ***
-## 15. var n = 7.5
-### What is true about the variable n?
+## Question 15
+```swift
+var n = 7.5
+
+```
+
+What is true about the variable n?
 
 ```swift
 a. n is a Float
@@ -211,16 +227,22 @@ d. In is an Int
 # Bonus 
 
 ***
-## 1. What are the differences between Double and Int in the numbers they can represent and how they store them?
+## Question 1
+
+What are the differences between Double and Int in the numbers they can represent and how they store them?
 
 
 ***
-## 2. What are the differences between Float and Double?
+## Question 2 
+
+What are the differences between Float and Double?
 
 
 ***
 
-## 3. What will happen when the code below is run?
+## Question 3
+
+What will happen when the code below is run?
 
 ```swift
 
@@ -236,8 +258,12 @@ d. It will give a compile-time error
 
 ```
 ***
-## 4. You are given a number a. Print the last digit of a.
-### var a = 123
+## Question 4 
+
+You are given a number a. 
+Print the last digit of a.
+
+var a = 123
 
 ```swift
 
@@ -260,7 +286,9 @@ Output:
 
 ***
 
-## 5. Given an int, determine and print whether it is even or odd.
+## Question 5 
+
+Given an int, determine and print whether it is even or odd.
 
 ```swift
 var number = 5
@@ -276,7 +304,9 @@ Even
 
 ***
 
-## 6. You are given 2 Doubles a and b. Print their average
+## Question 6
+
+You are given 2 Doubles a and b. Print their average
 
 ```swift
 var a = 2.0
@@ -287,7 +317,9 @@ var b = 5.0
 
 ***
 
-## 7. You are given 3 grades stored in 3 variables of type Double finalsGrade, midtermGrade, projectGrade. These grades are used to compute the grade for a class. finalsGrade represents 50% of the grade. midtermGrade represents 20% of the grade. projectGrade represents 30% of the final grade.
+## Question 7 
+
+You are given 3 grades stored in 3 variables of type Double finalsGrade, midtermGrade, projectGrade. These grades are used to compute the grade for a class. finalsGrade represents 50% of the grade. midtermGrade represents 20% of the grade. projectGrade represents 30% of the final grade.
 
 ### Print the grade for the class.
 
@@ -301,7 +333,9 @@ var projectGrade = 3.0
 
 ***
 
-## 8. You have the cost of a meal at a restaurant stored in a variable mealCost of type Double. You would like to leave a tip of a certain percentage. The percentage is stored in a variable tip of type Int.
+## Question 8 
+
+You have the cost of a meal at a restaurant stored in a variable mealCost of type Double. You would like to leave a tip of a certain percentage. The percentage is stored in a variable tip of type Int.
 
 ### Print the total cost of the meal.
 ```swift
@@ -317,7 +351,9 @@ Output:
 ```
 ***
 
-## 9. You are given three grades obtained by 3 students in a class stored in variables grade1, grade2, grade3 of typeDouble. You are also given your grade in the class stored in a variable yourGrade of type Double. Print above average if your grade is greater than the class average or below average” otherwise.
+## Question 9
+
+You are given three grades obtained by 3 students in a class stored in variables grade1, grade2, grade3 of typeDouble. You are also given your grade in the class stored in a variable yourGrade of type Double. Print above average if your grade is greater than the class average or below average” otherwise.
 
 ### Note: the average of the class includes your grade.
 ```swift
@@ -334,7 +370,9 @@ Output:
 ```
 ***
 
-## 10. A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
+## Question 10 
+
+A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
 
