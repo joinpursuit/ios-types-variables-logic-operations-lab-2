@@ -129,9 +129,11 @@ e. !(3 != 3)
 
 Given the below, which of the following expressions evaluate to true?
 
+```swift
  let x = 5 > 4
  let y = 100 / 10 == 1
  let z = 6
+```
 
 ```swift
 a. x && y
