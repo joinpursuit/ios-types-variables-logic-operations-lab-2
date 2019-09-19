@@ -20,7 +20,10 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+var classAverage = (7.0 + 9.0 + 5.0) / 3
+var yourGrade = 6.1
+yourGrade < classAverage
+print ("below average")
 ```
 
 ***
@@ -31,7 +34,11 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+if number % 2 == 0 {
+print("even")
+} else {
+print("odd")
+}
 ```
 
 ***
@@ -43,7 +50,11 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+if a % b == 0 {
+print("divisible")
+} else {
+print("not divisible")
+}
 ```
 
 ***
@@ -56,7 +67,11 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+if a == b || b == c || a == c {
+print("at least two variables have the same value")
+} else {
+print("All the values are different")
+}
 ```
 
 ***
@@ -68,7 +83,17 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+var baconSpoils = 7
+var eggsSpoils = 21
+if baconAge > baconSpoils {
+print("throw out bacon")
+}
+if eggsAge > eggsSpoils {
+print("throw out eggs")
+}
+if baconAge < baconSpoils && eggsAge < eggsSpoils {
+print("you can cook bacon and eggs")
+}
 ```
 
 ***
@@ -80,7 +105,16 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+if year % 400 == 0 {
+print("Leap year!")
+} else if year % 100 == 0 {
+print("Not a leap year!")
+} else if year % 4 == 0 {
+print("Leap year!")
+} else {
+print("Not a leap year")
+}
+
 ```
 
 ***
@@ -91,7 +125,11 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+if randomNum % 2 == 0 {
+print("heads")
+} else if randomNum % 2 != 0 {
+print("tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,8 +145,15 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
-```
+if a < b && a < c && a < d {
+print(a)
+} else if b < a && b < c && b < d {
+print(b)
+} else if c < a && c < b && c < d {
+print(c)
+} else {
+print(d)
+}```
 
 ***
 ## Question 9
