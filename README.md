@@ -226,33 +226,6 @@ d. In is an Int
 
 ```
 
-## 16. Mad-Libs! Add a value to the declared variables below in playgrounds. Insert the variables (already in correct order) inside the stringmadLib and print. 
-
-```swift
-
-
-var geographicLocation: String
-var adjective1: String
-var pluralNoun1: String
-var adjective2: String
-var pluralNoun2: String
-var number1: Int
-var number2: Int
-var articleOfClothing: String
-
-var madLib = "Here is tomorrow's weather report for \()
-and vicinity. Early tomorrow, a \()-front will
-collide with a mass of hot \() moving from the
-north. This means we can expect \() winds and
-occasional \() by late afternoon. Wind velocity will
-be \() miles an hour, and the high temperature should
-be around \() degrees. So, if you're going out, you had
-better plan on wearing your \()".
-```
-
-***
-
-
 # Bonus 
 
 ***
