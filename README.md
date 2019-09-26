@@ -22,7 +22,18 @@ var grade3 = 5.0
 
 // your code here
 ```
+My code:
+```swift
+var yourGrade:Double = 10.0
+var sum = grade1 + grade2 + grade3
+var average = sum / 3
 
+if (yourGrade > average){
+    print("above average")
+    } else if (yourGrade < average) {
+    print("below average")
+}
+```
 ***
 ## Question 2
 
@@ -32,6 +43,15 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+```
+My code:
+```swift
+
+if (number % 2 == 0){
+    print("/(number) is even")
+} else if (number % 2 == 1){
+    print("/(number) is odd")
+}
 ```
 
 ***
@@ -44,6 +64,14 @@ var a = 12
 var b = 3
 
 // code here
+```
+My code:
+```swift
+if(a%b == 0){
+    print("divisible")
+} else {
+    print("not divisible")
+}
 ```
 
 ***
@@ -58,6 +86,14 @@ var c = 2
 
 // your code here
 ```
+My code:
+```swift
+if(a == b && b == c && c == a){
+    print("At least two variables have the same value")
+} else {
+    print("All values are different")
+}
+```
 
 ***
 ## Question 5
@@ -70,6 +106,18 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+My code:
+```swift
+if(baconAge < 21 && eggsAge < 7){
+    print("you can cook bacon and eggs")
+} else if (baconAge > 21 && eggsAge < 7) {
+    print("throw out bacon")
+} else if (eggsAge > 7 && baconAge < 21){
+    print("throw out eggs")
+} else if (baconAge > 21 && eggsAge > 7){
+    print("throw out both bacon and eggs")
+}
+```
 
 ***
 ## Question 6
@@ -81,6 +129,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+```
+M code:
+```swift
+if(year%4 == 0){
+    if(year%400 == 0 && year%100 == 0) {
+        print("Leap year!")
+    }
+    print("Leap year!")
+} else {
+    print("Not a leap year!")
+}
+    
 ```
 
 ***
@@ -96,6 +156,15 @@ let randomNum = Int.random(in: 0...100)
 
 Hint: use an if/else block along with the `%` operator
 
+My code:
+```swift
+let randomNum = Int.random(in: 0...100)
+if (randomNum % 2 == 0){
+    print("Heads")
+} else {
+    print("Tails")
+}
+```
 ***
 ## Question 8
 
@@ -109,7 +178,27 @@ var d = 4
 
 // your code here
 ```
+My code:
 
+var smallNum = a
+
+if (smallNum < b || smallNum < c || smallNum < d){
+    if( smallNum < b ){
+        smallNum = b
+        if ( smallNum < c){
+            smallNum = c
+            if(smallNum < d){
+                smallNum = d
+                print(smallNum)
+            }
+            print(smallNum)
+        }
+        print(smallNum)
+    }
+}
+else {
+    print(smallNum)
+}
 ***
 ## Question 9
 
