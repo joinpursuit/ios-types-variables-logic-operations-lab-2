@@ -22,7 +22,23 @@ var grade3 = 5.0
 
 // your code here
 ```
+Answer
+```swift
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 7.0
+var classAverage = (grade1 + grade2 + grade3) / 3
+var result = ""
 
+if yourGrade > classAverage {
+    result = "above average"
+} else {
+    result = "below average"
+}
+
+print(result)
+```
 ***
 ## Question 2
 
