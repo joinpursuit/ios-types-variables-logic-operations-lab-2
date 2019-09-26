@@ -21,8 +21,13 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
-```
+let ClassAverage = (grade1 + grade2 + grade3) / 3.0
+var yourGrade : Double = 5.0
+print(yourGrade > ClassAverage ? "above average" : "below average")
 
+```
+my answers will go in here
+```
 ***
 ## Question 2
 
@@ -32,6 +37,7 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+print(number % 2 == 0 ? "even": "odd")
 ```
 
 ***
@@ -44,6 +50,8 @@ var a = 12
 var b = 3
 
 // code here
+// i'm assuming 'divisible' means that the remainder is 0 when dividing.
+print (a % b == 0 ? "divisible": "not divisible")
 ```
 
 ***
@@ -57,6 +65,7 @@ var b = 3
 var c = 2
 
 // your code here
+a == b || b == c || a == c ? "At least two variables have the same value" : "All the values are different."
 ```
 
 ***
@@ -69,6 +78,13 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+if baconAge <= 7 && eggsAge <= 21 {
+  print("you can cook bacon and eggs")
+} else if baconAge > 7 {
+  print("throw out bacon")
+} else {
+  print("throw out eggs")
+}
 ```
 
 ***
@@ -81,6 +97,15 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+if year % 4 == 0 {
+    if year % 100 == 0 && year % 400 != 0 {
+        print("Not a leap year!")
+    } else {
+        print("leap year!")
+    }
+} else {
+    print("Not a leap year!")
+}
 ```
 
 ***
@@ -92,6 +117,15 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
+let coinToss = Int.random(in:0...1)
+
+switch coinToss {
+case 0:
+    print("heads")
+default:
+    print("tails")
+}
+
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -108,6 +142,16 @@ var c = 3
 var d = 4
 
 // your code here
+if a < b && a < c && a < d {
+    print(a)
+} else if b < a && b < c && b < d {
+    print(b)
+} else if c < a && c < b && c < d {
+    print(c)
+} else {
+    print(d)
+}
+
 ```
 
 ***
@@ -122,6 +166,8 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+//answer below
+a, b, d, e
 ```
 
 ***
@@ -142,6 +188,13 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+x = true,
+y = false,
+z = 6
+//answer below
+
+b, c, 
+
 ```
 
 
@@ -156,6 +209,9 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+//answer below
+
+a, c
 ```
 
 
@@ -170,6 +226,9 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+//answer below
+
+a, b, c, d
 ```
 
 ***
@@ -191,6 +250,14 @@ b %= c
 
 print(a + b + c)
 
+//answer below
+
+a += b      => 25
+b -= c      => 1
+b * (c + a) => 120
+(b * c) + a => 40
+b %= a      => 5
+b %= c      => 1
 ```
 
 ***
@@ -199,13 +266,14 @@ print(a + b + c)
 let div = 11 / 4
 
 ```swift
-1. The value of div is ____________________(or write "div1 will not compile")
+1. The value of div is 2 (or write "div1 will not compile")
 
 let div2 = 11.0 / 4.0
-2. The value of div2 is ________________________(or write "div2 will not compile")
+2. The value of div2 is 2.75 (or write "div2 will not compile")
 let isEqual = div == div2
 
-3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+3. The value of isEqual is isEqual will not compile (or write "isEqual will not compile")
+
 
 
 ```
@@ -224,6 +292,9 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+//answer below
+b. 
+
 ```
 
 # Bonus 
@@ -233,12 +304,14 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+Double is a data type that can store digits after the decimal.  Integer is a data type that stores all whole positive and whole negative numbers.  Double can store a much wider range of values compared to Int.
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+Float can only hold up to 32 bits of data whilst Double only holds up to 64 bits of data.  Meaning that when converting from Double to Float, the value of the data will truncate.
 
 ***
 
@@ -258,6 +331,9 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+//answer below
+
+d
 ```
 ***
 ## Question 4 
@@ -282,8 +358,9 @@ var a = 337
 
 Output:
 7
+//answer below
 
-
+print(a % 10)
 ```
 
 ***
@@ -302,6 +379,11 @@ var number = 6
 Expected Output: 
 Even
 
+//answer below
+let evenOrOdd : String
+evenOrOdd = number % 2 == 0 ? "even" : "odd"
+print (evenOrOdd)
+
 ```
 
 ***
@@ -314,6 +396,8 @@ You are given 2 Doubles a and b. Print their average
 var a = 2.0
 var b = 5.0
 
+//answer below:
+print((a + b)/ 2.0)
 ```
 
 
@@ -331,6 +415,8 @@ var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
 
+//answer below:
+print((finalsGrade * .5) + (midtermGrade * .2) + (projectGrade * .3))
 ```
 
 ***
@@ -350,6 +436,9 @@ var tip:Int = 20
 Output:
 4.2
 
+//answer below
+
+print(mealCost * (Double(tip)/100) + mealCost)
 ```
 ***
 
@@ -369,6 +458,10 @@ var yourGrade = 8.0
 Output:
 "above average"
 
+//answer below 
+
+print(yourGrade > (grade1 + grade2 + grade3 + yourGrade) / 4 ? "above average" : "below average")
+
 ```
 ***
 
@@ -377,6 +470,18 @@ Output:
 A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
+
+```swift
+var numberOfFields : Int
+var wheatYield : Double 
+var weatherWasGood : Bool
+
+if weatherWasGood == true {
+    print (Double(numberOfFields) * (wheatYield) * 1.5)
+} else {
+    print (Double(numberOfFields) * (wheatYield))
+}
+```
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
