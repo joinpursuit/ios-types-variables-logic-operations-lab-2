@@ -26,7 +26,8 @@ var yourGrade : Double = 5.0
 print(yourGrade > ClassAverage ? "above average" : "below average")
 
 ```
-my answers will go in here
+my answers will go in here 3
+
 ```
 ***
 ## Question 2
@@ -53,6 +54,9 @@ var b = 3
 // i'm assuming 'divisible' means that the remainder is 0 when dividing.
 print (a % b == 0 ? "divisible": "not divisible")
 ```
+```
+woohooo
+```
 
 ***
 ## Question 4
@@ -65,7 +69,7 @@ var b = 3
 var c = 2
 
 // your code here
-a == b || b == c || a == c ? "At least two variables have the same value" : "All the values are different."
+print(a == b || b == c || a == c ? "At least two variables have the same value" : "All the values are different.")
 ```
 
 ***
