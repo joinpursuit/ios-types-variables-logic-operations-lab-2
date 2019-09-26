@@ -248,7 +248,9 @@ e. !(3 != 3)
 ```
 Answer
 ```swift
-
+a. 3 == 2 || 9 == 9
+b. !(3 > 3)
+e. !(3 != 3)
 ```
 ***
 ## Question 10
@@ -271,7 +273,7 @@ e. !(z < 6) && !y && !x
 ```
 Answer
 ```swift
-
+b. x || y || z == 1
 ```
 
 ***
@@ -288,7 +290,8 @@ d. Integers may contain decimals.
 ```
 Answer
 ```swift
-
+b. The maximum value for Integers is +∞.
+c. Integer types in computers take up a fixed amount of memory.
 ```
 
 ***
@@ -305,7 +308,10 @@ d. let yearPublished = "Nineteen-thirty-five"
 ```
 Answer
 ```swift
-
+a. let numberOfPages: Int = 500
+b. let numberOfChapters = "For Whom The Bell Tolls"
+c. let nameOfBook: Int = 14
+d. let yearPublished = "Nineteen-thirty-five"
 ```
 ***
 ## Question 13
@@ -329,7 +335,7 @@ print(a + b + c)
 ```
 Answer
 ```swift
-
+30
 ```
 ***
 ## Question 14
@@ -349,16 +355,14 @@ let isEqual = div == div2
 ```
 Answer
 ```swift
-
+1. The value of div is 2
+2. The value of div2 is 2.75
+3. isEqual will not compile
 ```
 ***
 ## Question 15
 ```swift
 var n = 7.5
-
-```
-Answer
-```swift
 
 ```
 What is true about the variable n?
@@ -372,7 +376,8 @@ d. In is an Int
 ```
 Answer
 ```swift
-
+b. n is a Double
+c. n is a Decimal
 ```
 # Bonus 
 
@@ -381,13 +386,19 @@ Answer
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+Answer
+```swift
 
+```
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+Answer
+```swift
 
+```
 ***
 
 ## Question 3
@@ -405,6 +416,10 @@ a. It will print 48.9
 b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
+
+```
+Answer
+```swift
 
 ```
 ***
@@ -433,6 +448,10 @@ Output:
 
 
 ```
+Answer
+```swift
+
+```
 
 ***
 
@@ -451,6 +470,10 @@ Expected Output:
 Even
 
 ```
+Answer
+```swift
+
+```
 
 ***
 
@@ -461,6 +484,10 @@ You are given 2 Doubles a and b. Print their average
 ```swift
 var a = 2.0
 var b = 5.0
+
+```
+Answer
+```swift
 
 ```
 
@@ -478,6 +505,10 @@ You are given 3 grades stored in 3 variables of type Double finalsGrade, midterm
 var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
+
+```
+Answer
+```swift
 
 ```
 
@@ -499,6 +530,10 @@ Output:
 4.2
 
 ```
+Answer
+```swift
+
+```
 ***
 
 ## Question 9
@@ -518,6 +553,10 @@ Output:
 "above average"
 
 ```
+Answer
+```swift
+
+```
 ***
 
 ## Question 10 
@@ -527,6 +566,11 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 ### Print the total amount of wheat that the farmer will harvest.
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
+
+```
+```
+Answer
+```swift
 
 ```
 
