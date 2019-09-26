@@ -128,7 +128,21 @@ var eggsAge = 12 // eggs are 12 days old
 ```
 Answer
 ```swift
+var baconAge = 6 // the bacon is 6 days old
+var eggsAge = 12 // eggs are 12 days old
+var result = ""
 
+if baconAge < 7 && eggsAge < 21 {
+    result = "you can cook bacon and eggs"
+} else if beconAge > 7 && eggsAge > 21 {
+    result = "throw out bacon and eggs"
+} else if beconAge > 7 {
+    result = "throw out bacon"
+} else {
+    result = "throw out eggs"
+}
+
+print(result)
 ```
 ***
 ## Question 6
@@ -143,7 +157,20 @@ let year = 2014
 ```
 Answer
 ```swift
+let year = 2014
+var result = ""
 
+if year % 400 == 0 {
+    result = "Leap year!"
+} else if year % 100 == 0 {
+    result = "Not a leap year!"
+} else if year % 4 == 0 {
+    result = "Leap year!"
+} else {
+    result = "Not a leap year!"
+}
+
+print(result)
 ```
 ***
 ## Question 7
@@ -157,7 +184,17 @@ let randomNum = Int.random(in: 0...100)
 ```
 Answer
 ```swift
+let randomNum = Int.random(in: 0...100)
 
+func coinToss() {
+    if randomNum % 2 == 0 {
+        print("heads")
+    } else {
+        print("tails")
+    }
+}
+
+coinToss()
 ```
 Hint: use an if/else block along with the `%` operator
 
@@ -176,7 +213,25 @@ var d = 4
 ```
 Answer
 ```swift
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+var smallest = a
 
+if smallest > b {
+    smallest = b
+}
+
+if smallest > c {
+    smallest = c
+}
+
+if smallest > d {
+    smallest = d
+}  
+
+print(smallest)
 ```
 ***
 ## Question 9
