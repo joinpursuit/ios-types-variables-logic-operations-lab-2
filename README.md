@@ -388,7 +388,7 @@ What are the differences between Double and Int in the numbers they can represen
 
 Answer
 ```swift
-
+// Double can have decimals up to 64-bit but Int will not allow you to have any decimals
 ```
 ***
 ## Question 2 
@@ -397,7 +397,7 @@ What are the differences between Float and Double?
 
 Answer
 ```swift
-
+Float holds 32-bit but Double holds 64-bit
 ```
 ***
 
@@ -420,7 +420,7 @@ d. It will give a compile-time error
 ```
 Answer
 ```swift
-
+d. It will give a compile-time error
 ```
 ***
 ## Question 4 
@@ -450,7 +450,10 @@ Output:
 ```
 Answer
 ```swift
+var a = 123
+var lastDigit = a % 10
 
+print(lastDigit)
 ```
 
 ***
@@ -472,7 +475,16 @@ Even
 ```
 Answer
 ```swift
+var number = 5
+var result = ""
 
+if number % 2 == 0 {
+    result = "even"
+} else { 
+    result = "odd"
+}
+
+print(result)
 ```
 
 ***
@@ -488,7 +500,11 @@ var b = 5.0
 ```
 Answer
 ```swift
+var a = 2.0
+var b = 5.0
+var average = (a + b) / 2
 
+print(average)
 ```
 
 
@@ -509,7 +525,12 @@ var projectGrade = 3.0
 ```
 Answer
 ```swift
+var finalsGrade = 2.0
+var midtermGrade = 4.0
+var projectGrade = 3.0
+var classGrade = (finalsGrade * 0.5)+(midtermGrade * 0.2)+(projectGrade * 0.3)
 
+print(classGrade)
 ```
 
 ***
@@ -532,7 +553,11 @@ Output:
 ```
 Answer
 ```swift
+var mealCost:Double = 3.5
+var tip:Int = 20
+var totalCost = mealCost * (Double(tip) / 100 + 1)
 
+print(totalCost)
 ```
 ***
 
@@ -555,7 +580,20 @@ Output:
 ```
 Answer
 ```swift
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.0
+var average = grade1 + grade1 + grade1 / 3
+var result = ""
 
+if yourGrade > average {
+    result = "above average"
+} else {
+    result = "below average"
+}
+
+print(result)
 ```
 ***
 
@@ -571,6 +609,9 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 ```
 Answer
 ```swift
-
+var numberOfFields = 2 
+var heightOf
+var wheatYieldof: Double
+var weatherWasGood: Bool
 ```
 
