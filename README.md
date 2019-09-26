@@ -49,6 +49,19 @@ let number = 2
 
 // your code here
 ```
+Answer
+```swift
+let number = 2
+var result = ""
+
+if number % 2 == 0 {
+    result = "even"
+} else {
+    result = "odd"
+}
+
+print(result)
+```
 
 ***
 ## Question 3
@@ -61,7 +74,20 @@ var b = 3
 
 // code here
 ```
+Answer
+```swift
+var a = 12
+var b = 3
+var result = ""
 
+if a % b == 0 {
+    result = "divisible"
+} else {
+    result = "not divisible"
+}
+
+print(result)
+```
 ***
 ## Question 4
 
@@ -74,7 +100,21 @@ var c = 2
 
 // your code here
 ```
+Answer
+```swift
+var a = 2
+var b = 3
+var c = 2
+var result = ""
 
+if a == b || a == c || b == c {
+    result = "At least two variables have the same value"
+} else {
+    result = "All the values are different"
+}
+
+print(result)
+```
 ***
 ## Question 5
 
@@ -86,7 +126,10 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+Answer
+```swift
 
+```
 ***
 ## Question 6
 
@@ -98,7 +141,10 @@ let year = 2014
 
 // your code here
 ```
+Answer
+```swift
 
+```
 ***
 ## Question 7
 
@@ -109,7 +155,10 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
+Answer
+```swift
 
+```
 Hint: use an if/else block along with the `%` operator
 
 ***
@@ -125,7 +174,10 @@ var d = 4
 
 // your code here
 ```
+Answer
+```swift
 
+```
 ***
 ## Question 9
 
@@ -139,7 +191,10 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+Answer
+```swift
 
+```
 ***
 ## Question 10
 
@@ -159,7 +214,10 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
+Answer
+```swift
 
+```
 
 ***
 ## Question 11
@@ -173,7 +231,10 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
+Answer
+```swift
 
+```
 
 ***
 ## Question 12
@@ -187,7 +248,10 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+Answer
+```swift
 
+```
 ***
 ## Question 13
 
@@ -208,7 +272,10 @@ b %= c
 print(a + b + c)
 
 ```
+Answer
+```swift
 
+```
 ***
 ## Question 14
 
@@ -225,13 +292,20 @@ let isEqual = div == div2
 
 
 ```
+Answer
+```swift
+
+```
 ***
 ## Question 15
 ```swift
 var n = 7.5
 
 ```
+Answer
+```swift
 
+```
 What is true about the variable n?
 
 ```swift
@@ -241,7 +315,10 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+Answer
+```swift
 
+```
 # Bonus 
 
 ***
