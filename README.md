@@ -22,6 +22,19 @@ var grade3 = 5.0
 
 // your code here
 ```
+```
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var myGrade = 8.0
+var average = (grade1 + grade2 + grade3 + myGrade)/4
+
+if myGrade >= average {
+    print("My Grade is above average")
+} else {
+    print("My Grade is below average")
+}
+```
 
 ***
 ## Question 2
@@ -33,7 +46,14 @@ let number = 2
 
 // your code here
 ```
-
+```
+let number = 2
+if number % 2 == 0 {
+    print("This number is even")
+} else {
+    print("this number is odd")
+}
+```
 ***
 ## Question 3
 
@@ -44,6 +64,15 @@ var a = 12
 var b = 3
 
 // code here
+```
+```
+var a = 12
+var b = 3
+if a % b == 0 {
+    print("Divisible")
+} else {
+    print("Not Divisible")
+}
 ```
 
 ***
@@ -57,6 +86,17 @@ var b = 3
 var c = 2
 
 // your code here
+```
+```
+
+var a = 2
+var b = 3
+var c = 2
+if a == b || b == c || a == c {
+    print("At least two variables have the same value")
+} else {
+    print("All the values are different")
+}
 ```
 
 ***
