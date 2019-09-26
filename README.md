@@ -21,7 +21,14 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
-```
+``` swift
+var yourGrade: Double = 10.0
+if yourGrade > (grade1 + grade2 + grade3 + yourGrade)/4 {
+print("above average")
+} else {
+print("below average")
+}
+
 
 ***
 ## Question 2
@@ -32,7 +39,12 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
-```
+```swift 
+if number % 2 == 0 {
+print("even")
+} else {
+print("odd")
+}
 
 ***
 ## Question 3
@@ -44,7 +56,12 @@ var a = 12
 var b = 3
 
 // code here
-```
+``` swift
+if a % b == 0 {
+print("divisible")
+} else {
+print("not divisible")
+}
 
 ***
 ## Question 4
@@ -57,7 +74,12 @@ var b = 3
 var c = 2
 
 // your code here
-```
+```swift 
+if a == b || a == c || b == c {
+print("At least two variables have the same value")
+} else {
+print("All the values are different")
+}
 
 ***
 ## Question 5
@@ -69,7 +91,14 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
-```
+```swift
+if baconAge <= 7 && eggsAge <= 21 {
+print("you can cook bacon and eggs")
+} else if baconAge > 7 {
+print("throw out bacon")
+} else {
+print("throw out eggs")
+}
 
 ***
 ## Question 6
@@ -81,7 +110,17 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
-```
+``` swift 
+if year % 4 == 0 {
+    if year % 100 == 0 && year % 400 != 0 {
+        print("Not a leap year!")
+    } else {
+        print("Leap year!")
+    }
+} else {
+   print("Not a leap year!")
+}
+
 
 ***
 ## Question 7
@@ -92,7 +131,12 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
-```
+``` swift
+if randomNum % 2 == 0 {
+print("heads")
+} else {
+print("tails")
+}
 
 Hint: use an if/else block along with the `%` operator
 
@@ -108,7 +152,11 @@ var c = 3
 var d = 4
 
 // your code here
-```
+``` swift
+var variables = [a, b, c, d]
+variables.sort()
+print(variables[0])
+
 
 ***
 ## Question 9
@@ -122,7 +170,9 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+// your code here
 ```
+a, b, d, e
 
 ***
 ## Question 10
@@ -130,8 +180,8 @@ e. !(3 != 3)
 Given the below, which of the following expressions evaluate to true?
 
 ```swift
- let x = 5 > 4
- let y = 100 / 10 == 1
+ let x = 5 > 4              true
+ let y = 100 / 10 == 1      false
  let z = 6
 ```
 
@@ -143,7 +193,7 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+b, c
 
 ***
 ## Question 11
@@ -157,7 +207,7 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+c
 
 ***
 ## Question 12
@@ -171,7 +221,7 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+a, b, c, d
 ***
 ## Question 13
 
@@ -192,20 +242,20 @@ b %= c
 print(a + b + c)
 
 ```
-
+30
 ***
 ## Question 14
 
 let div = 11 / 4
 
 ```swift
-1. The value of div is ____________________(or write "div1 will not compile")
+1. The value of div is _________2__________(or write "div1 will not compile")
 
 let div2 = 11.0 / 4.0
-2. The value of div2 is ________________________(or write "div2 will not compile")
+2. The value of div2 is ______________2.75__________(or write "div2 will not compile")
 let isEqual = div == div2
 
-3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+3. The value of isEqual is____________isEqual will not compile________ (or write "isEqual will not compile")
 
 
 ```
@@ -225,7 +275,7 @@ c. n is a Decimal
 d. In is an Int
 
 ```
-
+a, b, c 
 # Bonus 
 
 ***
@@ -233,13 +283,14 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+Doubles are more precise and take up more memory
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
-
+Doubles are more precise
 ***
 
 ## Question 3
@@ -259,6 +310,7 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+d
 ***
 ## Question 4 
 
@@ -283,9 +335,9 @@ var a = 337
 Output:
 7
 
-
-```
-
+// your code here
+```swift
+print(a % 10)
 ***
 
 ## Question 5 
@@ -302,8 +354,13 @@ var number = 6
 Expected Output: 
 Even
 
-```
-
+// your code here
+```swift
+if number % 2 == 0 {
+print("even")
+} else {
+print("odd")
+}
 ***
 
 ## Question 6
@@ -314,8 +371,9 @@ You are given 2 Doubles a and b. Print their average
 var a = 2.0
 var b = 5.0
 
-```
-
+// your code here
+```swift
+print((a + b)/2)
 
 ***
 
@@ -331,7 +389,10 @@ var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
 
-```
+// your code here
+```swift
+
+print((finalsGrade * 0.5) + (midtermGrade * 0.2) + (projectGrade * 0.3))
 
 ***
 
@@ -350,7 +411,10 @@ var tip:Int = 20
 Output:
 4.2
 
-```
+// your code here
+```swift
+var tipCalculate = (Double(tip)/100) + 1
+print(mealCost * tipCalculate)
 ***
 
 ## Question 9
@@ -369,7 +433,13 @@ var yourGrade = 8.0
 Output:
 "above average"
 
-```
+// your code here
+```swift
+if yourGrade > (grade1 + grade2 + grade3 + yourGrade)/ 4 {
+print("above average")
+} else {
+print("below average")
+}
 ***
 
 ## Question 10 
@@ -379,6 +449,12 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 ### Print the total amount of wheat that the farmer will harvest.
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
-
-```
+// your code here
+```swift
+var correctField = Double(numberOfFields)
+if weatherWasGood {
+print((correctField * wheatYield) * 1.50)
+} else {
+print(correctField * wheatYield)
+}
 
