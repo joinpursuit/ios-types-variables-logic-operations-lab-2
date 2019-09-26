@@ -184,7 +184,7 @@ let randomNum = Int.random(in: 0...100)
 ```
 Answer
 ```swift
-func coinToss() -> String{
+func coinToss() -> String {
     let randomNum = Int.random(in: 0...100)
 
     if randomNum % 2 == 0 {
