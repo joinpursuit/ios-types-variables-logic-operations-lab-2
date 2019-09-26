@@ -184,17 +184,17 @@ let randomNum = Int.random(in: 0...100)
 ```
 Answer
 ```swift
-let randomNum = Int.random(in: 0...100)
+func coinToss() -> String{
+    let randomNum = Int.random(in: 0...100)
 
-func coinToss() {
     if randomNum % 2 == 0 {
-        print("heads")
+        return "heads"
     } else {
-        print("tails")
+        return "tails"
     }
 }
 
-coinToss()
+print(coinToss())
 ```
 Hint: use an if/else block along with the `%` operator
 
