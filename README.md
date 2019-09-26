@@ -43,10 +43,18 @@ else {
 
 You are given a number. Print even if the number is even or odd otherwise.
 
+# ANSWER
 ```swift
 let number = 2
 
-// your code here
+var remainder = number % 2
+
+if remainder == 0 {
+    print("even")
+}
+else {
+    print("odd")
+}
 ```
 
 ***
@@ -54,11 +62,18 @@ let number = 2
 
 You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible by `b` and `"not divisible"` otherwise.
 
+# ANSWER
 ```swift
 var a = 12
 var b = 3
+var aModb = a % b
 
-// code here
+if aModb == 0 {
+    print("divisible")
+}
+else {
+    print("not divisible")
+}
 ```
 
 ***
@@ -66,12 +81,22 @@ var b = 3
 
 You are given three variables `a`, `b` and `c`. Check if at least two variables have the same value. If that is true, print `"At least two variables have the same value"` otherwise print `"All the values are different"`.
 
+# ANSWER
 ```swift
 var a = 2
 var b = 3
-var c = 2
+var c = 1
 
-// your code here
+if a == b {
+    print("At least two variables have the same value")
+}   else if a == c {
+    print("At least two variables have the same value")
+}   else if b == c {
+    print("At least two variables have the same value")
+}
+else {
+    print("All the values are different")
+}
 ```
 
 ***
