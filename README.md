@@ -21,6 +21,26 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
+
+_______________________
+Answer:
+
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 9.5
+
+var averageGrade = (grade1 + grade2 + grade3 + yourGrade) / 4  // Output 7.625
+
+if yourGrade < averageGrade {
+    print("Below average")
+} else if yourGrade > averageGrade {
+print("Above average")
+} else {
+print("Average")
+}
+
+// Prints "Above average"
 ```
 
 ***
@@ -32,6 +52,18 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+_______________________
+Answer:
+
+let number = 2
+
+if number % 2 == 0 {
+print("Even")
+} else {
+print("Odd")
+}
+
+// Prints "Even"
 ```
 
 ***
@@ -44,6 +76,21 @@ var a = 12
 var b = 3
 
 // code here
+______________________________
+
+Answer:
+
+var a = 12
+var b = 3
+
+if a % b == 0 {
+print("Divisible")
+} else {
+print("Not divisible")
+}
+
+// Prints "Divisible"
+
 ```
 
 ***
@@ -57,6 +104,17 @@ var b = 3
 var c = 2
 
 // your code here
+
+________________________________
+Answer:
+
+if a == b || b == c || a == c {
+    print("At least two variables have the same value");
+} else {
+    print("All the values are different")
+}
+
+// Prints "At least two variables have the same value"
 ```
 
 ***
