@@ -131,13 +131,13 @@ if year % 4 != 0 {
     print("\(year) is not leap year")
 }
     else if year % 100 != 0  {
-        print("Case No. 2; The year \(year) is a leap year because it is not divisible by 100.")
+        print("\(year) is a leap year")
     }
     else if year % 400 == 0  {
         print("\(year) is a leap year")
     }
     else {
-        print("\(year) is not a leap year because it not evenly divisible by 400.")
+        print("\(year) is not a leap year")
 }
 ```
 
@@ -307,12 +307,16 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+# ANSWER 
+## An int is a binary representation of a whole number, double is a double-precision floating point number (uses decimal point).
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+# ANSWER 
+## The difference is the precision, a Double can hold twice as many digits after the decimal than the Float can.
 
 ***
 
@@ -333,6 +337,8 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+# ANSWER is D
+
 ***
 ## Question 4 
 
@@ -341,21 +347,18 @@ Print the last digit of a.
 
 var a = 123
 
+# ANSWER
 ```swift
 
 Example 1
-Input: 
-var a = 123
-
-Output:
-3
+var a1 = 123
+var lastDigit = a1 % 10
+print(lastDigit)
 
 Example 2
-Input: 
-var a = 337
-
-Output:
-7
+var a1 = 337
+var lastDigit = a1 % 10
+print(lastDigit)
 
 
 ```
@@ -366,16 +369,19 @@ Output:
 
 Given an int, determine and print whether it is even or odd.
 
+# ANSWER
 ```swift
-var number = 5
 
-Example 1
-Input: 
+example 1
+
 var number = 6
-
-Expected Output: 
-Even
-
+var evenOdd = number1 % 2
+if evenOdd == 0 {
+    print("Even")
+}
+else {
+    print("Odd")
+}
 ```
 
 ***
@@ -384,10 +390,13 @@ Even
 
 You are given 2 Doubles a and b. Print their average
 
+# ANSWER
 ```swift
+
 var a = 2.0
 var b = 5.0
-
+var average = (a + b) / 2
+print(average)
 ```
 
 
@@ -399,12 +408,15 @@ You are given 3 grades stored in 3 variables of type Double finalsGrade, midterm
 
 ### Print the grade for the class.
 
+# ANSWER
+
 ```swift
 
 var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
-
+var classGrade = ((finalsGrade * 0.5) + (midtermGrade * 0.2) + (projectGrade * 0.3))
+print(classGrade)
 ```
 
 ***
@@ -414,15 +426,16 @@ var projectGrade = 3.0
 You have the cost of a meal at a restaurant stored in a variable mealCost of type Double. You would like to leave a tip of a certain percentage. The percentage is stored in a variable tip of type Int.
 
 ### Print the total cost of the meal.
+
+# ANSWER
+
 ```swift
 
-Input: 
 var mealCost:Double = 3.5
 var tip:Int = 20
-
-
-Output:
-4.2
+let tipDouble = Double(tip)
+var totalCost: Double = ((mealCost * (tipDouble/100)) + mealCost)
+print(totalCost)
 
 ```
 ***
@@ -432,17 +445,23 @@ Output:
 You are given three grades obtained by 3 students in a class stored in variables grade1, grade2, grade3 of typeDouble. You are also given your grade in the class stored in a variable yourGrade of type Double. Print above average if your grade is greater than the class average or below average” otherwise.
 
 ### Note: the average of the class includes your grade.
+
+# ANSWER
 ```swift
 
-Input: 
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 var yourGrade = 8.0
 
-Output:
-"above average"
+var averageGrade = (grade1 + grade2 + grade3 + yourGrade) / 4
 
+if yourGrade > averageGrade {
+    print("above average")
+}
+else {
+    print("below average")
+}
 ```
 ***
 
@@ -453,6 +472,22 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 ### Print the total amount of wheat that the farmer will harvest.
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
+
+# ANSWER
+```swift
+var numberOfFields = 2
+var wheatYieldPerField = Double(100)
+var wheatYield = Double(numberOfFields) * wheatYieldPerField
+
+var weatherWasGood = true
+var goodWheatYield = wheatYield * 0.5 + wheatYield
+if weatherWasGood {
+    print(goodWheatYield)
+}
+else {
+    print(wheatYield)
+}
+```
 
 ```
 
