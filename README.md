@@ -29,15 +29,12 @@ var grade2 = 9.0
 var grade3 = 5.0
 var yourGrade = 7.0
 var classAverage = (grade1 + grade2 + grade3) / 3
-var result = ""
 
 if yourGrade > classAverage {
-    result = "above average"
+    print("above average")
 } else {
-    result = "below average"
+    print("below average")
 }
-
-print(result)
 ```
 ***
 ## Question 2
@@ -52,15 +49,12 @@ let number = 2
 Answer
 ```swift
 let number = 2
-var result = ""
 
 if number % 2 == 0 {
-    result = "even"
+    print("even")
 } else {
-    result = "odd"
+    print("odd")
 }
-
-print(result)
 ```
 
 ***
@@ -78,15 +72,12 @@ Answer
 ```swift
 var a = 12
 var b = 3
-var result = ""
 
 if a % b == 0 {
-    result = "divisible"
+    print("divisible")
 } else {
-    result = "not divisible"
+    print("not divisible")
 }
-
-print(result)
 ```
 ***
 ## Question 4
@@ -105,15 +96,12 @@ Answer
 var a = 2
 var b = 3
 var c = 2
-var result = ""
 
 if a == b || a == c || b == c {
-    result = "At least two variables have the same value"
+    print("At least two variables have the same value")
 } else {
-    result = "All the values are different"
+    print("All the values are different")
 }
-
-print(result)
 ```
 ***
 ## Question 5
@@ -130,19 +118,16 @@ Answer
 ```swift
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
-var result = ""
 
 if baconAge < 7 && eggsAge < 21 {
-    result = "you can cook bacon and eggs"
+    print("you can cook bacon and eggs")
 } else if beconAge > 7 && eggsAge > 21 {
-    result = "throw out bacon and eggs"
+    print("throw out bacon and eggs")
 } else if beconAge > 7 {
-    result = "throw out bacon"
+    print("throw out bacon")
 } else {
-    result = "throw out eggs"
+    print("throw out eggs")
 }
-
-print(result)
 ```
 ***
 ## Question 6
@@ -158,19 +143,16 @@ let year = 2014
 Answer
 ```swift
 let year = 2014
-var result = ""
 
 if year % 400 == 0 {
-    result = "Leap year!"
+    print("Leap year!")
 } else if year % 100 == 0 {
-    result = "Not a leap year!"
+    print("Not a leap year!")
 } else if year % 4 == 0 {
-    result = "Leap year!"
+    print("Leap year!")
 } else {
-    result = "Not a leap year!"
+    print("Not a leap year!")
 }
-
-print(result)
 ```
 ***
 ## Question 7
@@ -250,6 +232,7 @@ Answer
 ```swift
 a. 3 == 2 || 9 == 9
 b. !(3 > 3)
+d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 ```
 ***
@@ -599,7 +582,7 @@ print(result)
 
 ## Question 10 
 
-A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
+A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYield of type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
 
@@ -609,13 +592,18 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 ```
 Answer
 ```swift
-var numberOfFields = 2 
-var heightXOfFields = 5
-var heightYOfFields = 3
-var widthOfFields = 10
-var widthXOfFields = widthOfFields / 2 
-var sideOfTheFields = (())
-var wheatYieldof: Double
-var weatherWasGood: Bool
+var numberOfFields = 2
+var weatherWasGood = true
+var wheatYield: Double = 500
+var height = 20
+var y = 3
+var x = 4
+var width = 10
+var sizeOfTheField = ((height - y) * x) + y * width
+var totalSize = Double(sizeOfTheField) * Double(numberOfFields) * wheatYield
+
+var totalWheat = weatherWasGood == true ? totalSize * 1.5 : totalSize
+
+print(totalWheat)
 ```
 
