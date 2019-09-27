@@ -15,23 +15,39 @@ You are given three grades obtained by 3 students, which are stored in variables
 Create a variable called `yourGrade` of type `Double` and give it a value.
 Print `"above average"` if your grade is greater than the class average or `"below average"` otherwise.
 
+# ANSWER
 ```swift
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
-```
+var yourGrade = 8.0
+var averageGrade = (grade1 + grade2 + grade3 + yourGrade) / 4
 
+if yourGrade > averageGrade {
+    print("above average")
+}
+else {
+    print("below average")
+}
+```
 ***
 ## Question 2
 
 You are given a number. Print even if the number is even or odd otherwise.
 
+# ANSWER
 ```swift
 let number = 2
 
-// your code here
+var remainder = number % 2
+
+if remainder == 0 {
+    print("even")
+}
+else {
+    print("odd")
+}
 ```
 
 ***
@@ -39,11 +55,18 @@ let number = 2
 
 You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible by `b` and `"not divisible"` otherwise.
 
+# ANSWER
 ```swift
 var a = 12
 var b = 3
+var aModb = a % b
 
-// code here
+if aModb == 0 {
+    print("divisible")
+}
+else {
+    print("not divisible")
+}
 ```
 
 ***
@@ -51,12 +74,22 @@ var b = 3
 
 You are given three variables `a`, `b` and `c`. Check if at least two variables have the same value. If that is true, print `"At least two variables have the same value"` otherwise print `"All the values are different"`.
 
+# ANSWER
 ```swift
 var a = 2
 var b = 3
-var c = 2
+var c = 1
 
-// your code here
+if a == b {
+    print("At least two variables have the same value")
+}   else if a == c {
+    print("At least two variables have the same value")
+}   else if b == c {
+    print("At least two variables have the same value")
+}
+else {
+    print("All the values are different")
+}
 ```
 
 ***
@@ -64,11 +97,25 @@ var c = 2
 
 You are working on a smart-fridge. The smart-fridge knows how old the eggs and bacon in it are. You know that eggs spoil after 3 weeks (21 days) and bacon after one week (7 days). Given `baconAge` and `eggsAge` (both in days) determine if you can cook bacon and eggs, or which ingredients you need to throw out. If you can cook bacon and eggs, print `"you can cook bacon and eggs"`. If you need to throw out any ingredients, for each one print a line with the text `"throw out"` + bacon or eggs.
 
+# ANSWER
 ```swift
-var baconAge = 6 // the bacon is 6 days old
-var eggsAge = 12 // eggs are 12 days old
+var baconAge = 8
+var eggsAge = 20
 
-// your code here
+if baconAge <= 7 {
+    if eggsAge <= 21 {
+        print("you can cook bacon and eggs")
+    } else if eggsAge > 21 {
+        print("throw out eggs")
+        }
+}
+if baconAge > 7 {
+    if eggsAge <= 21 {
+        print("throw out bacon")
+    } else if eggsAge > 21 {
+        print("throw out bacon and eggs")
+        }
+}
 ```
 
 ***
@@ -80,7 +127,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+if year % 4 != 0 {
+    print("\(year) is not leap year")
+}
+    else if year % 100 != 0  {
+        print("\(year) is a leap year")
+    }
+    else if year % 400 == 0  {
+        print("\(year) is a leap year")
+    }
+    else {
+        print("\(year) is not a leap year")
+}
 ```
 
 ***
@@ -88,26 +146,33 @@ let year = 2014
 
 If you use `random()` it will give you a random number within a specified range. Generate a random number and use it to simulate a coin toss. Print `"heads"` or `"tails"`.
 
+# ANSWER
 ```swift
 let randomNum = Int.random(in: 0...100)
+var coin = randomNum % 2
 
-// your code here
+if coin == 0 {
+    print("tails")
+}
+else {
+    print("heads")
+}
 ```
-
-Hint: use an if/else block along with the `%` operator
 
 ***
 ## Question 8
 
 You are given four variables `a`, `b`, `c` and `d`. Print the value of the smallest one.
 
+# ANSWER
 ```swift
 var a = 5
 var b = 6
 var c = 3
 var d = 4
 
-// your code here
+let smallestNum = min(a, b, c, d)
+print(smallestNum)
 ```
 
 ***
@@ -123,6 +188,8 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+# ANSWER
+## All true except for c
 
 ***
 ## Question 10
@@ -143,7 +210,8 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+# ANSWER
+## B and C are true
 
 ***
 ## Question 11
@@ -157,7 +225,7 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+# ANSWER is C
 
 ***
 ## Question 12
@@ -171,7 +239,8 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+# ANSWER
+## ALL of these will compile
 ***
 ## Question 13
 
@@ -192,7 +261,7 @@ b %= c
 print(a + b + c)
 
 ```
-
+# ANSWER is 30
 ***
 ## Question 14
 
@@ -209,6 +278,10 @@ let isEqual = div == div2
 
 
 ```
+# ANSWER
+1. The value of div is 2 (Integer)
+1. The value of div2 is 2.75 (Double)
+1. isEqual will not compile because one is an Integer and the other is a Double
 ***
 ## Question 15
 ```swift
@@ -225,6 +298,7 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+# ANSWER - B is true
 
 # Bonus 
 
@@ -233,12 +307,16 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+# ANSWER 
+## An int is a binary representation of a whole number, double is a double-precision floating point number (uses decimal point).
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+# ANSWER 
+## The difference is the precision, a Double can hold twice as many digits after the decimal than the Float can.
 
 ***
 
@@ -259,6 +337,8 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+# ANSWER is D
+
 ***
 ## Question 4 
 
@@ -267,21 +347,18 @@ Print the last digit of a.
 
 var a = 123
 
+# ANSWER
 ```swift
 
 Example 1
-Input: 
-var a = 123
-
-Output:
-3
+var a1 = 123
+var lastDigit = a1 % 10
+print(lastDigit)
 
 Example 2
-Input: 
-var a = 337
-
-Output:
-7
+var a1 = 337
+var lastDigit = a1 % 10
+print(lastDigit)
 
 
 ```
@@ -292,16 +369,19 @@ Output:
 
 Given an int, determine and print whether it is even or odd.
 
+# ANSWER
 ```swift
-var number = 5
 
-Example 1
-Input: 
+example 1
+
 var number = 6
-
-Expected Output: 
-Even
-
+var evenOdd = number1 % 2
+if evenOdd == 0 {
+    print("Even")
+}
+else {
+    print("Odd")
+}
 ```
 
 ***
@@ -310,10 +390,13 @@ Even
 
 You are given 2 Doubles a and b. Print their average
 
+# ANSWER
 ```swift
+
 var a = 2.0
 var b = 5.0
-
+var average = (a + b) / 2
+print(average)
 ```
 
 
@@ -325,12 +408,15 @@ You are given 3 grades stored in 3 variables of type Double finalsGrade, midterm
 
 ### Print the grade for the class.
 
+# ANSWER
+
 ```swift
 
 var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
-
+var classGrade = ((finalsGrade * 0.5) + (midtermGrade * 0.2) + (projectGrade * 0.3))
+print(classGrade)
 ```
 
 ***
@@ -340,15 +426,16 @@ var projectGrade = 3.0
 You have the cost of a meal at a restaurant stored in a variable mealCost of type Double. You would like to leave a tip of a certain percentage. The percentage is stored in a variable tip of type Int.
 
 ### Print the total cost of the meal.
+
+# ANSWER
+
 ```swift
 
-Input: 
 var mealCost:Double = 3.5
 var tip:Int = 20
-
-
-Output:
-4.2
+let tipDouble = Double(tip)
+var totalCost: Double = ((mealCost * (tipDouble/100)) + mealCost)
+print(totalCost)
 
 ```
 ***
@@ -358,17 +445,23 @@ Output:
 You are given three grades obtained by 3 students in a class stored in variables grade1, grade2, grade3 of typeDouble. You are also given your grade in the class stored in a variable yourGrade of type Double. Print above average if your grade is greater than the class average or below average” otherwise.
 
 ### Note: the average of the class includes your grade.
+
+# ANSWER
 ```swift
 
-Input: 
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 var yourGrade = 8.0
 
-Output:
-"above average"
+var averageGrade = (grade1 + grade2 + grade3 + yourGrade) / 4
 
+if yourGrade > averageGrade {
+    print("above average")
+}
+else {
+    print("below average")
+}
 ```
 ***
 
@@ -379,6 +472,22 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 ### Print the total amount of wheat that the farmer will harvest.
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
+
+# ANSWER
+```swift
+var numberOfFields = 2
+var wheatYieldPerField = Double(100)
+var wheatYield = Double(numberOfFields) * wheatYieldPerField
+
+var weatherWasGood = true
+var goodWheatYield = wheatYield * 0.5 + wheatYield
+if weatherWasGood {
+    print(goodWheatYield)
+}
+else {
+    print(wheatYield)
+}
+```
 
 ```
 
