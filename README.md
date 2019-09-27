@@ -111,6 +111,18 @@ var eggsAge = 12 // eggs are 12 days old
 // your code here
 ```
 
+```
+var baconAge = 6 // the bacon is 6 days old
+var eggsAge = 12 // eggs are 12 days old
+if baconAge >= 7 {
+    print("Bacon is bad")
+} else if eggsAge >= 21{
+    print("eggs are bad")
+} else {
+    print("time for bacon and eggs")
+}
+```
+
 ***
 ## Question 6
 
@@ -133,7 +145,14 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
-
+```
+let randomNum = Int.random(in: 0...100)
+if randomNum <= 49 {
+    print("Heads \(randomNum)")
+} else{
+    print("Tails \(randomNum)")
+}
+```
 Hint: use an if/else block along with the `%` operator
 
 ***
@@ -149,6 +168,15 @@ var d = 4
 
 // your code here
 ```
+```
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+var smallest = min(a, b, c, d)
+print(smallest)
+```
 
 ***
 ## Question 9
@@ -163,7 +191,10 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+```
+A , B , D , E
 
+```
 ***
 ## Question 10
 
@@ -183,7 +214,10 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
+```
+B, C
 
+```
 
 ***
 ## Question 11
@@ -211,7 +245,10 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+```
+a,b,c,d
 
+```
 ***
 ## Question 13
 
