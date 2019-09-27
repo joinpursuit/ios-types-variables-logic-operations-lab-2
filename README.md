@@ -20,7 +20,14 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+let yourGrade:Double = 4.0
+var averag = (yourGrade + grade1 + grade2 + grade3) / 4
+if yourGrade > averag {
+    print("above average")
+} else {
+    print("below average")
+}
+
 ```
 
 ***
@@ -30,20 +37,24 @@ You are given a number. Print even if the number is even or odd otherwise.
 
 ```swift
 let number = 2
+if number % 2 == 0{
+    print("even")
+} else {
+    print("odd")
+}
 
-// your code here
 ```
 
 ***
 ## Question 3
 
-You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible by `b` and `"not divisible"` otherwise.
+You are given two numbers `a` and `b`. Print `"divisible"` if `a` isdivisible by `b` and `"not divisible"` otherwise.
 
 ```swift
 var a = 12
 var b = 3
+print(a % b == 0 ? "divisible" : "not divisible" )
 
-// code here
 ```
 
 ***
@@ -55,8 +66,11 @@ You are given three variables `a`, `b` and `c`. Check if at least two variables 
 var a = 2
 var b = 3
 var c = 2
-
-// your code here
+if a == b || b == c || a == c {
+print("At least two variables are the same")
+} else {
+print("All values are different")
+}
 ```
 
 ***
@@ -68,7 +82,15 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+if baconAge <= 7 && eggsAge <= 21{
+print("cook bacon and eggs")
+} else if baconAge <= 7 && eggsAge > 21 {
+print("throwout eggs")
+} else if baconAge > 7 && eggsAge <= 21 {
+print("throwout bacon")
+} else if baconAge > 7 && eggsAge > 21 {
+print("throwout bacon and eggs")
+}
 ```
 
 ***
