@@ -308,8 +308,8 @@ let isEqual = div == div2
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
 ```
-1 - The value of div is 2
-2 - The value of div2 is 2.75
+1 - The value of div is 2 <br/>
+2 - The value of div2 is 2.75 <br/>
 3 - The value of isEqual is isEqual will not complile
 
 ***
