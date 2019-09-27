@@ -294,6 +294,16 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+/* Question # 11 Answer
+
+a. Integers may be unsigned. False
+b. In mathematics yes, but in computing no. Infinity is unattainable. False
+c. True
+d. Integers may not contain decimals. False
+
+Statement c is True.
+*/
+
 ```
 
 
@@ -308,6 +318,12 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+/* Question #12 Answer
+ 
+All of the above code snippets will compile  
+  
+*/
+
 ```
 
 ***
@@ -320,14 +336,20 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
-(b * c) + a
-b %= a
-b %= c
+a += b // a = 25
+b -= c // b = 1
+b * (c + a) // 120
+(b * c) + a // 29
+b %= a // b = 1
+b %= c // b = 1
 
 print(a + b + c)
+
+/* Question #13 Answer
+
+print(a + b + c) // Will output 30
+
+*/
 
 ```
 
@@ -344,6 +366,20 @@ let div2 = 11.0 / 4.0
 let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+
+/* Question #14 Answer
+
+1. The value of div is 2.
+
+let div2 = 11.0 / 4.0
+
+2. The value of div2 is 2.75.
+
+let isEqual = div == div2
+
+3. The value of isEqual is False.
+
+*/
 
 
 ```
@@ -362,6 +398,11 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+/* Question #15 Answer
+
+Statement b is true, "n is a Double."
+
+*/
 ```
 
 # Bonus 
