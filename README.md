@@ -21,6 +21,14 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
+var yourGrade:Double = 87
+var totalGrades = (grade1 + grade2 + grade3) / 300
+
+if totalGrades < yourGrade{
+    print("above average")
+} else {
+    print("below average")
+}
 ```
 
 ***
@@ -32,6 +40,11 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+if number % 2 == 0 {
+    print("even")
+} else {
+    print("odd")
+}
 ```
 
 ***
@@ -44,6 +57,11 @@ var a = 12
 var b = 3
 
 // code here
+if a % b == 0 {
+    print("divisible")
+} else {
+    print("not divisible")
+}
 ```
 
 ***
@@ -57,6 +75,11 @@ var b = 3
 var c = 2
 
 // your code here
+if a == b || b == c || a == c {
+    print("At least two variables have the same value")
+} else {
+    print("All the values are different")
+}
 ```
 
 ***
@@ -69,6 +92,13 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+if eggsAge < 21 && baconAge < 7 {
+    print("you can cook bacon and eggs")
+} else if baconAge < 7 {
+    print("throw out bacon")
+} else {
+    print("throw out eggs")
+}
 ```
 
 ***
@@ -81,6 +111,14 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+let specialRule1 = year / 100
+let specialRule2 = year / 400
+
+if year % 4 == 0 && specialRule1 % 2 == 0 && specialRule2 % 2 == 1 {
+    print("Leap year!")
+} else {
+    print("Not a leap year!")
+}
 ```
 
 ***
@@ -92,6 +130,11 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
+if randomNum % 2 == 0 {
+    print("heads")
+} else {
+    print("tail")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -108,6 +151,15 @@ var c = 3
 var d = 4
 
 // your code here
+if a < b && b < c {
+    print(a)
+} else if c < d && a < d {
+    print(b)
+} else if c < d && d < a {
+    print(c)
+} else {
+    print(d)
+}
 ```
 
 ***
@@ -122,8 +174,9 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+answer:
+A, B, D, E
 ```
-
 ***
 ## Question 10
 
@@ -142,6 +195,8 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+answer:
+B, C
 ```
 
 
@@ -156,6 +211,8 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+answer:
+C
 ```
 
 
@@ -170,6 +227,8 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+answer: 
+A, B, C, D
 ```
 
 ***
@@ -182,15 +241,17 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
+a += b 
 b -= c
 b * (c + a)
 (b * c) + a
-b %= a
-b %= c
+b %= a 0 
+b %= c 0
 
 print(a + b + c)
 
+answer: 
+30
 ```
 
 ***
@@ -203,11 +264,14 @@ let div = 11 / 4
 
 let div2 = 11.0 / 4.0
 2. The value of div2 is ________________________(or write "div2 will not compile")
-let isEqual = div == div2
 
+let isEqual = div == div2
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
-
+answer:
+1. 2
+2. 2.75
+3. isEqual will not compile
 ```
 ***
 ## Question 15
@@ -224,6 +288,8 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+answer:
+B
 ```
 
 # Bonus 
@@ -234,11 +300,25 @@ d. In is an Int
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
 
+Double: 
+Double is a floating-point type and represents a 64-bit floating-point number with a precision of at least 15 decimal digits. This means double can store numbers that are much larger or smaller than can be stored in an Int.
+
+Int:
+Integers are either signed (positive, zero, or negative) or unsigned (positive or zero) whole numbers.
+On a 32-bit platform, Int is the same size as Int32.
+On a 64-bit platform, Int is the same size as Int64.
+These sizes are large enough for many integer ranges and aids code for consistency and interoperability. 
+
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+Float:
+Float represents a 32-bit floating-point number. The precision is at least 6 decimal digits. 
+
+Double:
+Double represents a 64-bit floating-point number and has a more precision of at least 15 decimal digits. 
 
 ***
 
@@ -258,6 +338,8 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+answer:
+D 
 ```
 ***
 ## Question 4 
@@ -283,7 +365,8 @@ var a = 337
 Output:
 7
 
-
+answer: 
+print(a % 10)
 ```
 
 ***
@@ -302,6 +385,12 @@ var number = 6
 Expected Output: 
 Even
 
+answer:
+if number % 2 == 0 {
+    print("even")
+} else {
+    print("odd")
+}
 ```
 
 ***
@@ -314,6 +403,8 @@ You are given 2 Doubles a and b. Print their average
 var a = 2.0
 var b = 5.0
 
+answer:
+print((a + b) / 2)
 ```
 
 
@@ -331,6 +422,9 @@ var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
 
+answer: 
+let gradeOfTheClass = ((finalsGrade  * (50/100)) + (midtermGrade * (20/100)) + (projectGrade * (30/100))) / 3
+print(gradeOfTheClass)
 ```
 
 ***
@@ -350,6 +444,9 @@ var tip:Int = 20
 Output:
 4.2
 
+answer:
+let totalCostOfTheMeal = (mealCost * (Double(tip) / 100)) + mealCost
+print(totalCostOfTheMeal)
 ```
 ***
 
@@ -369,6 +466,13 @@ var yourGrade = 8.0
 Output:
 "above average"
 
+answer:
+let classAverage = (grade1 + grade2 + grade3) / 3
+if classAverage < yourGrade {
+    print("above average")
+} else {
+    print("below average")
+}
 ```
 ***
 
@@ -380,5 +484,28 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
+```swift
+answer:
+// I'm still working on the last problem. 
+let x = 5
+let width = 2 * x
+
+let y = 5
+let height = (area / (width - x * height - y)) / width
+let area = width * height - (width - x * height - y)
+
+let numberOfFields: Int = 7
+let wheatYield: Double = 0
+var total = Double(numberOfFields) + wheatYield
+
+var weatherWasGood: Bool
+var totalAmountOfWheat = total * .20
+
+if weatherWasGood == true {
+    print("Harvest increased by 50%, \(totalAmountOfWheat)")
+} else {
+    print("Harvest was \(totalAmountOfWheat)")
+}
 ```
+
 
