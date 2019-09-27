@@ -21,19 +21,7 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 ```
-Answer
-```swift
-var grade1 = 7.0
-var grade2 = 9.0
-var grade3 = 5.0
 
-var yourGrade: Double = 8.5
-
-var totalGrade = (grade1 + grade2 + grade3 + yourGrade)
-
-var averageGrade = totalGrade / 4
-
-print(yourGrade>averageGrade ? "Above Average" : "Below Average")
 ```
 Answer
 
@@ -48,6 +36,7 @@ var totalGrade = (grade1 + grade2 + grade3 + yourGrade)
 var averageGrade = totalGrade / 4
 
 print(yourGrade>averageGrade ? "Above Average" : "Below Average")
+```
 
 ***
 ## Question 2
