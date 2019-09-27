@@ -15,13 +15,6 @@ You are given three grades obtained by 3 students, which are stored in variables
 Create a variable called `yourGrade` of type `Double` and give it a value.
 Print `"above average"` if your grade is greater than the class average or `"below average"` otherwise.
 
-```swift
-var grade1 = 7.0
-var grade2 = 9.0
-var grade3 = 5.0
-
-// your code here
-```
 # ANSWER
 ```swift
 var grade1 = 7.0
@@ -104,11 +97,25 @@ else {
 
 You are working on a smart-fridge. The smart-fridge knows how old the eggs and bacon in it are. You know that eggs spoil after 3 weeks (21 days) and bacon after one week (7 days). Given `baconAge` and `eggsAge` (both in days) determine if you can cook bacon and eggs, or which ingredients you need to throw out. If you can cook bacon and eggs, print `"you can cook bacon and eggs"`. If you need to throw out any ingredients, for each one print a line with the text `"throw out"` + bacon or eggs.
 
+# ANSWER
 ```swift
-var baconAge = 6 // the bacon is 6 days old
-var eggsAge = 12 // eggs are 12 days old
+var baconAge = 8
+var eggsAge = 20
 
-// your code here
+if baconAge <= 7 {
+    if eggsAge <= 21 {
+        print("you can cook bacon and eggs")
+    } else if eggsAge > 21 {
+        print("throw out eggs")
+        }
+}
+if baconAge > 7 {
+    if eggsAge <= 21 {
+        print("throw out bacon")
+    } else if eggsAge > 21 {
+        print("throw out bacon and eggs")
+        }
+}
 ```
 
 ***
@@ -120,7 +127,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+if year % 4 != 0 {
+    print("\(year) is not leap year")
+}
+    else if year % 100 != 0  {
+        print("Case No. 2; The year \(year) is a leap year because it is not divisible by 100.")
+    }
+    else if year % 400 == 0  {
+        print("\(year) is a leap year")
+    }
+    else {
+        print("\(year) is not a leap year because it not evenly divisible by 400.")
+}
 ```
 
 ***
@@ -128,26 +146,33 @@ let year = 2014
 
 If you use `random()` it will give you a random number within a specified range. Generate a random number and use it to simulate a coin toss. Print `"heads"` or `"tails"`.
 
+# ANSWER
 ```swift
 let randomNum = Int.random(in: 0...100)
+var coin = randomNum % 2
 
-// your code here
+if coin == 0 {
+    print("tails")
+}
+else {
+    print("heads")
+}
 ```
-
-Hint: use an if/else block along with the `%` operator
 
 ***
 ## Question 8
 
 You are given four variables `a`, `b`, `c` and `d`. Print the value of the smallest one.
 
+# ANSWER
 ```swift
 var a = 5
 var b = 6
 var c = 3
 var d = 4
 
-// your code here
+let smallestNum = min(a, b, c, d)
+print(smallestNum)
 ```
 
 ***
@@ -163,6 +188,8 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+# ANSWER
+## All true except for c
 
 ***
 ## Question 10
@@ -183,7 +210,8 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+# ANSWER
+## B and C are true
 
 ***
 ## Question 11
@@ -197,7 +225,7 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+# ANSWER is C
 
 ***
 ## Question 12
@@ -211,7 +239,8 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+# ANSWER
+## ALL of these will compile
 ***
 ## Question 13
 
@@ -232,7 +261,7 @@ b %= c
 print(a + b + c)
 
 ```
-
+# ANSWER is 30
 ***
 ## Question 14
 
@@ -249,6 +278,10 @@ let isEqual = div == div2
 
 
 ```
+# ANSWER
+1. The value of div is 2 (Integer)
+1. The value of div2 is 2.75 (Double)
+1. isEqual will not compile because one is an Integer and the other is a Double
 ***
 ## Question 15
 ```swift
@@ -265,6 +298,7 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+# ANSWER - B is true
 
 # Bonus 
 
