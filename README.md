@@ -22,7 +22,20 @@ var grade3 = 5.0
 
 // your code here
 ```
+Answer
+```swift
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 7.0
+var classAverage = (grade1 + grade2 + grade3) / 3
 
+if yourGrade > classAverage {
+    print("above average")
+} else {
+    print("below average")
+}
+```
 ***
 ## Question 2
 
@@ -32,6 +45,16 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+```
+Answer
+```swift
+let number = 2
+
+if number % 2 == 0 {
+    print("even")
+} else {
+    print("odd")
+}
 ```
 
 ***
@@ -45,7 +68,17 @@ var b = 3
 
 // code here
 ```
+Answer
+```swift
+var a = 12
+var b = 3
 
+if a % b == 0 {
+    print("divisible")
+} else {
+    print("not divisible")
+}
+```
 ***
 ## Question 4
 
@@ -58,7 +91,18 @@ var c = 2
 
 // your code here
 ```
+Answer
+```swift
+var a = 2
+var b = 3
+var c = 2
 
+if a == b || a == c || b == c {
+    print("At least two variables have the same value")
+} else {
+    print("All the values are different")
+}
+```
 ***
 ## Question 5
 
@@ -70,7 +114,21 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+Answer
+```swift
+var baconAge = 6 // the bacon is 6 days old
+var eggsAge = 12 // eggs are 12 days old
 
+if baconAge < 7 && eggsAge < 21 {
+    print("you can cook bacon and eggs")
+} else if beconAge > 7 && eggsAge > 21 {
+    print("throw out bacon and eggs")
+} else if beconAge > 7 {
+    print("throw out bacon")
+} else {
+    print("throw out eggs")
+}
+```
 ***
 ## Question 6
 
@@ -82,7 +140,20 @@ let year = 2014
 
 // your code here
 ```
+Answer
+```swift
+let year = 2014
 
+if year % 400 == 0 {
+    print("Leap year!")
+} else if year % 100 == 0 {
+    print("Not a leap year!")
+} else if year % 4 == 0 {
+    print("Leap year!")
+} else {
+    print("Not a leap year!")
+}
+```
 ***
 ## Question 7
 
@@ -93,7 +164,20 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
+Answer
+```swift
+func coinToss() -> String {
+    let randomNum = Int.random(in: 0...100)
 
+    if randomNum % 2 == 0 {
+        return "heads"
+    } else {
+        return "tails"
+    }
+}
+
+print(coinToss())
+```
 Hint: use an if/else block along with the `%` operator
 
 ***
@@ -109,7 +193,28 @@ var d = 4
 
 // your code here
 ```
+Answer
+```swift
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+var smallest = a
 
+if smallest > b {
+    smallest = b
+}
+
+if smallest > c {
+    smallest = c
+}
+
+if smallest > d {
+    smallest = d
+}  
+
+print(smallest)
+```
 ***
 ## Question 9
 
@@ -123,7 +228,13 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
-
+Answer
+```swift
+a. 3 == 2 || 9 == 9
+b. !(3 > 3)
+d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
+e. !(3 != 3)
+```
 ***
 ## Question 10
 
@@ -143,7 +254,10 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+Answer
+```swift
+b. x || y || z == 1
+```
 
 ***
 ## Question 11
@@ -157,7 +271,11 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+Answer
+```swift
+b. The maximum value for Integers is +∞.
+c. Integer types in computers take up a fixed amount of memory.
+```
 
 ***
 ## Question 12
@@ -171,7 +289,13 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+Answer
+```swift
+a. let numberOfPages: Int = 500
+b. let numberOfChapters = "For Whom The Bell Tolls"
+c. let nameOfBook: Int = 14
+d. let yearPublished = "Nineteen-thirty-five"
+```
 ***
 ## Question 13
 
@@ -192,7 +316,10 @@ b %= c
 print(a + b + c)
 
 ```
-
+Answer
+```swift
+30
+```
 ***
 ## Question 14
 
@@ -209,13 +336,18 @@ let isEqual = div == div2
 
 
 ```
+Answer
+```swift
+1. The value of div is 2
+2. The value of div2 is 2.75
+3. isEqual will not compile
+```
 ***
 ## Question 15
 ```swift
 var n = 7.5
 
 ```
-
 What is true about the variable n?
 
 ```swift
@@ -225,7 +357,11 @@ c. n is a Decimal
 d. In is an Int
 
 ```
-
+Answer
+```swift
+b. n is a Double
+c. n is a Decimal
+```
 # Bonus 
 
 ***
@@ -233,13 +369,19 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
-
+Answer
+```swift
+// Double can have decimals up to 64-bit but Int will not allow you to have any decimals
+```
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
-
+Answer
+```swift
+Float holds 32-bit but Double holds 64-bit
+```
 ***
 
 ## Question 3
@@ -258,6 +400,10 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+```
+Answer
+```swift
+d. It will give a compile-time error
 ```
 ***
 ## Question 4 
@@ -285,6 +431,13 @@ Output:
 
 
 ```
+Answer
+```swift
+var a = 123
+var lastDigit = a % 10
+
+print(lastDigit)
+```
 
 ***
 
@@ -303,6 +456,19 @@ Expected Output:
 Even
 
 ```
+Answer
+```swift
+var number = 5
+var result = ""
+
+if number % 2 == 0 {
+    result = "even"
+} else { 
+    result = "odd"
+}
+
+print(result)
+```
 
 ***
 
@@ -314,6 +480,14 @@ You are given 2 Doubles a and b. Print their average
 var a = 2.0
 var b = 5.0
 
+```
+Answer
+```swift
+var a = 2.0
+var b = 5.0
+var average = (a + b) / 2
+
+print(average)
 ```
 
 
@@ -331,6 +505,15 @@ var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
 
+```
+Answer
+```swift
+var finalsGrade = 2.0
+var midtermGrade = 4.0
+var projectGrade = 3.0
+var classGrade = (finalsGrade * 0.5)+(midtermGrade * 0.2)+(projectGrade * 0.3)
+
+print(classGrade)
 ```
 
 ***
@@ -351,6 +534,14 @@ Output:
 4.2
 
 ```
+Answer
+```swift
+var mealCost:Double = 3.5
+var tip:Int = 20
+var totalCost = mealCost * (Double(tip) / 100 + 1)
+
+print(totalCost)
+```
 ***
 
 ## Question 9
@@ -370,15 +561,49 @@ Output:
 "above average"
 
 ```
+Answer
+```swift
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.0
+var average = grade1 + grade1 + grade1 / 3
+var result = ""
+
+if yourGrade > average {
+    result = "above average"
+} else {
+    result = "below average"
+}
+
+print(result)
+```
 ***
 
 ## Question 10 
 
-A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
+A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYield of type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
+```
+```
+Answer
+```swift
+var numberOfFields = 2
+var weatherWasGood = true
+var wheatYield: Double = 500
+var height = 20
+var y = 3
+var x = 4
+var width = 10
+var sizeOfTheField = ((height - y) * x) + y * width
+var totalSize = Double(sizeOfTheField) * Double(numberOfFields) * wheatYield
+
+var totalWheat = weatherWasGood == true ? totalSize * 1.5 : totalSize
+
+print(totalWheat)
 ```
 
