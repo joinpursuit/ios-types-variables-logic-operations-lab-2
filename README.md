@@ -22,6 +22,12 @@ var grade3 = 5.0
 
 // your code here
 ```
+ var grade1 = 7.0
+ var grade2 = 9.0
+ var grade3 = 5.0
+
+ var aboveAverage = 
+ var yourGrade = ("grade1","grade2","grade3")
 
 ***
 ## Question 2
@@ -33,6 +39,8 @@ let number = 2
 
 // your code here
 ```
+let number = 2 
+print(number) 
 
 ***
 ## Question 3
