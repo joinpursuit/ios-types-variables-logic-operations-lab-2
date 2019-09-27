@@ -125,7 +125,8 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// if year % 4 == 0 {
+// Answer: 
+if year % 4 == 0 {
     if (year % 100 == 0) && !(year % 400 == 0) {
         print("Not Leap year!")
     } else {
@@ -180,7 +181,10 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+
+// Answer: A, B, D, E 
 ```
+
 
 ***
 ## Question 10
@@ -200,6 +204,7 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+// Answer: C
 ```
 
 
@@ -213,6 +218,8 @@ a. Integers must have a positive or negative sign always.
 b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
+
+// Answer: C 
 
 ```
 
@@ -228,6 +235,7 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+// Answer: All of the above. 
 ```
 
 ***
@@ -240,14 +248,14 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
-(b * c) + a
-b %= a
-b %= c
+a += b   // a = 25
+b -= c   // b = 1
+b * (c + a) // = 29 
+(b * c) + // a = 29 
+b %= a // b = 1
+b %= c // b = 1
 
-print(a + b + c)
+print(a + b + c) // = 30 
 
 ```
 
@@ -257,13 +265,13 @@ print(a + b + c)
 let div = 11 / 4
 
 ```swift
-1. The value of div is ____________________(or write "div1 will not compile")
+1. The value of div is ___2_______________(or write "div1 will not compile")
 
 let div2 = 11.0 / 4.0
-2. The value of div2 is ________________________(or write "div2 will not compile")
+2. The value of div2 is __________2.5______________(or write "div2 will not compile")
 let isEqual = div == div2
 
-3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+3. The value of isEqual is______False_______________ (or write "isEqual will not compile")
 
 
 ```
@@ -282,6 +290,7 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+// Answer: B 
 ```
 
 # Bonus 
