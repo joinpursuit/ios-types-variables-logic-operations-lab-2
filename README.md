@@ -20,8 +20,34 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
 ```
+Answer
+```swift
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var yourGrade: Double = 8.5
+
+var totalGrade = (grade1 + grade2 + grade3 + yourGrade)
+
+var averageGrade = totalGrade / 4
+
+print(yourGrade>averageGrade ? "Above Average" : "Below Average")
+```
+Answer
+
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var yourGrade: Double = 8.5
+
+var totalGrade = (grade1 + grade2 + grade3 + yourGrade)
+
+var averageGrade = totalGrade / 4
+
+print(yourGrade>averageGrade ? "Above Average" : "Below Average")
 
 ***
 ## Question 2
@@ -381,4 +407,5 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
 ```
+
 
