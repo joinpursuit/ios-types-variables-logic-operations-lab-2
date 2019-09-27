@@ -610,7 +610,11 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 Answer
 ```swift
 var numberOfFields = 2 
-var heightOf
+var heightXOfFields = 5
+var heightYOfFields = 3
+var widthOfFields = 10
+var widthXOfFields = widthOfFields / 2 
+var sideOfTheFields = (())
 var wheatYieldof: Double
 var weatherWasGood: Bool
 ```
