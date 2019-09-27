@@ -95,6 +95,14 @@ var c = 2
 
 // your code here
 ```
+Answer
+```swift
+
+if aa == bb || aa==cc || bb==cc {
+    print("At least two variables have the same value")
+} else {
+    print("All the values are different")
+```
 
 ***
 ## Question 5
