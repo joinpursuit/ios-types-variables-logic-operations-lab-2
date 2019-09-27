@@ -48,6 +48,18 @@ let number = 2
 
 // your code here
 ```
+Answer 
+```swift
+let number = 3
+
+let even = (number%2)
+
+if even == 0 {
+    print("Even")
+} else {
+    print("Odd")
+}
+```
 
 ***
 ## Question 3
@@ -59,6 +71,16 @@ var a = 12
 var b = 3
 
 // code here
+```
+Answer
+```swift
+var a = 12
+var b = 3
+
+if a%b == 0 {
+    print("Divisible")
+} else {
+    print("Not Divisible")
 ```
 
 ***
