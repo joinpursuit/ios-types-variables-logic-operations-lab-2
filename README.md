@@ -19,6 +19,7 @@ Print `"above average"` if your grade is greater than the class average or `"bel
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
+
 // MY ANSWER BELOW
 
 var grade1 = 7.0
@@ -38,7 +39,10 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+// MY ANSWER BELOW
+
+let number = 2
+print(number%2 == 0 ? "even" : "odd")
 ```
 
 ***
@@ -50,7 +54,12 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+// MY ANSWER BELOW
+
+var a = 12
+var b = 3
+number = a / b
+print(number%2 == 0 ? "divisible" : "not divisible")
 ```
 
 ***
@@ -63,7 +72,24 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+// THE ANSWER IS
+
+var a = 2
+var b = 3
+var c = 2
+
+if a == b
+{
+    print("At least two variables have the same value")
+}
+else if a == c
+{
+    print("At least two variables have the same value")
+}
+else
+{
+    print("All the values are different")
+}
 ```
 
 ***
@@ -75,7 +101,23 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+// THE ANSWER IS
+
+var baconAge = 6 // the bacon is 6 days old
+var eggsAge = 12 // eggs are 12 days old
+
+if baconAge >= 7
+{
+    print("throw out bacon" )
+}
+if eggsAge >= 21
+    {
+        print("throw out the eggs")
+    }
+if baconAge < 7 && eggsAge < 21
+{
+    print("you can cook bacon and eggs")
+}
 ```
 
 ***
