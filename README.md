@@ -22,7 +22,21 @@ var grade3 = 5.0
 
 // your code here
 ```
+/*ANSWER
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.7
 
+var avg = (grade1 + grade2 + grade3 + yourGrade) / 4
+
+if yourGrade > avg {
+    print("above average")
+} else {
+    print("below average")
+}
+
+*/
 ***
 ## Question 2
 
@@ -33,6 +47,16 @@ let number = 2
 
 // your code here
 ```
+/*ANSWER
+let number = 8
+
+if number % 2 == 0 {
+    print("This number is even")
+} else if number % 3 == 1 {
+    print("This number is odd")
+}
+*/
+
 
 ***
 ## Question 3
@@ -45,6 +69,17 @@ var b = 3
 
 // code here
 ```
+/*ANSWER
+var a = 12
+var b = 3
+
+if a % b == 0 {
+    print("\(a) is divisible by \(b)")
+} else {
+    print("\(a) is not divisble by \(b)")
+}
+
+*/
 
 ***
 ## Question 4
@@ -58,6 +93,10 @@ var c = 2
 
 // your code here
 ```
+/*
+
+*/
+
 
 ***
 ## Question 5
