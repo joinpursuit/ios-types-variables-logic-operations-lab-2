@@ -20,9 +20,7 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
-```
-/*ANSWER
+*ANSWER
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
@@ -37,6 +35,7 @@ if yourGrade > avg {
 }
 
 */
+```
 ***
 ## Question 2
 
@@ -46,16 +45,17 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
-```
 /*ANSWER
 let number = 8
 
 if number % 2 == 0 {
-    print("This number is even")
+print("This number is even")
 } else if number % 3 == 1 {
-    print("This number is odd")
+print("This number is odd")
 }
 */
+```
+
 
 
 ***
@@ -68,18 +68,19 @@ var a = 12
 var b = 3
 
 // code here
-```
 /*ANSWER
 var a = 12
 var b = 3
 
 if a % b == 0 {
-    print("\(a) is divisible by \(b)")
+print("\(a) is divisible by \(b)")
 } else {
-    print("\(a) is not divisble by \(b)")
+print("\(a) is not divisble by \(b)")
 }
 
 */
+```
+
 
 ***
 ## Question 4
@@ -92,10 +93,8 @@ var b = 3
 var c = 2
 
 // your code here
-```
-/*
 
-*/
+```
 
 
 ***
