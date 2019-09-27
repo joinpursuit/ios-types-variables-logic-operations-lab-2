@@ -19,8 +19,15 @@ Print `"above average"` if your grade is greater than the class average or `"bel
 var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
+// MY ANSWER BELOW
 
-// your code here
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var gradeAvg = (grade1 + grade2 + grade3) / 3
+var yourGrade: Double = 1
+print(yourGrade > gradeAvg ? "above average" : "below average")
 ```
 
 ***
