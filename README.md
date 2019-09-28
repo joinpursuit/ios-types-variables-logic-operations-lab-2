@@ -166,7 +166,29 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// Answer:
+var smallestNum: Int
+
+if a < b {
+    smallestNum = a //
+} else {
+    smallestNum = b
+}
+
+//if b < smallestNum {
+//    smallestNum = b //
+//}
+
+if c < smallestNum {
+    smallestNum = c //
+}
+
+if d < smallestNum {
+    smallestNum = d //
+}
+
+ print(smallestNum)
+
 ```
 
 ***
