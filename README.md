@@ -194,9 +194,24 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
 ```
+Answer
+```swift
+var c = 530495
+var d = 11938
+var e = 312359765
+var f = 2235754
 
+if c < d && c < e && c < f {
+    print(c)
+} else if d < e && d < f {
+    print(d)
+} else if e < f {
+    print(e)
+} else {
+    print(f)
+}
+```
 ***
 ## Question 9
 
@@ -210,6 +225,12 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+Answer
+
+a.
+b.
+d.
+e.
 
 ***
 ## Question 10
@@ -230,7 +251,9 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+Answer
+b.
+c.
 
 ***
 ## Question 11
@@ -244,6 +267,12 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
+Answer
+
+a. False - Positive Ints don't require positive signs
+b. False - Int have a range of -2,147,483,648 and 2,147,483,647
+c. True - this is determined by bit depth of the Int (IE: 32 vs 64)
+d. False - Floats and Doubles can contain decimals
 
 
 ***
@@ -258,6 +287,12 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+Answer
+
+a.
+b.
+c.
+d.
 
 ***
 ## Question 13
@@ -279,6 +314,10 @@ b %= c
 print(a + b + c)
 
 ```
+Answer 
+```swift
+30
+```
 
 ***
 ## Question 14
@@ -296,6 +335,12 @@ let isEqual = div == div2
 
 
 ```
+Answer 
+```
+1. The value of div is 2
+2. The value of div2 is 2.75
+3. isEqual will not compile because you cannot mix data types (Int and Double)
+```
 ***
 ## Question 15
 ```swift
@@ -312,6 +357,12 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+Answer
+```
+b.
+
+Note: Possible typo for option "d."? 
+```
 
 # Bonus 
 
@@ -320,13 +371,19 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+Doubles will contain a decimal point up to 64bits of value. 
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
-
-
+```
+```
+Answer
+```
+-Floats are 32bits and double are 64bits, resulting in how data can be stored
+```
+```
 ***
 
 ## Question 3
@@ -345,6 +402,10 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+```
+Answer
+```
+d. It will give a compile-time error (Can't mix data types(Float + Double)
 ```
 ***
 ## Question 4 
@@ -371,6 +432,14 @@ Output:
 7
 
 
+```
+Answer
+```swift
+var a = 123
+print(a % 120)
+
+var a = 337
+print(a % 30)
 ```
 
 ***
