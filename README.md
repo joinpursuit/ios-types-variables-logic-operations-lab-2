@@ -383,7 +383,6 @@ Answer
 ```
 -Floats are 32bits and double are 64bits, resulting in how data can be stored
 ```
-```
 ***
 ```
 ## Question 3
