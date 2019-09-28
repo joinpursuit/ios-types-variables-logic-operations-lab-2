@@ -385,7 +385,7 @@ Answer
 ```
 ```
 ***
-
+```
 ## Question 3
 
 What will happen when the code below is run?
