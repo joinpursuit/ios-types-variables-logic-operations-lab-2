@@ -21,8 +21,19 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
-```
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.0
+var averageGrade = ( grade1 + grade2 + grade3 + yourGrade ) / 4
+if yourGrade > averageGrade {
+print("Above Average.")
+} else {
+print("Below Average.")
+}
+Printed: "Above Average"
 
+ 
 ***
 ## Question 2
 
@@ -32,8 +43,14 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
-```
-
+let number = 2
+if number % 2 == 0 {
+    print("Even")
+} else {
+    print("Odd")
+}
+output:
+Even
 ***
 ## Question 3
 
@@ -44,7 +61,15 @@ var a = 12
 var b = 3
 
 // code here
-```
+var a = 12
+var b = 3
+if a % b == 0 {
+    print("divisible")
+} else {
+    print("not divisible")
+}
+output:
+divisible
 
 ***
 ## Question 4
@@ -58,7 +83,16 @@ var c = 2
 
 // your code here
 ```
-
+var a = 2
+var b = 3
+var c = 2
+if a == b || b == c || c == a {
+print("At least two variables have the same value")
+} else {
+print("All the values are different")
+}
+Output:
+At least two variables have the same value
 ***
 ## Question 5
 
@@ -70,6 +104,24 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+var baconAge = 6
+var eggsAge = 12
+
+if baconAge < 8 && eggsAge < 22 {
+        print("you can eat bacon and eggs")
+        }
+if baconAge > 7 && eggsAge > 21 {
+         print("throw away bacon")
+         print("throw away eggs")
+    }
+else if baconAge > 7 {
+print("throw away bacon")
+}
+else if eggsAge > 21{
+print("throw away eggs")
+}
+output:
+"you can eat bacon and eggs"
 
 ***
 ## Question 6
@@ -82,7 +134,16 @@ let year = 2014
 
 // your code here
 ```
+let year = 2014
 
+if year % 100 == 0 && year % 400 == 0 || year % 4 == 0 {
+print("\(year) is a leap year")
+}
+else {
+print("\(year) is not a leap year")
+}
+output:
+2014 is not a leap year
 ***
 ## Question 7
 
@@ -93,6 +154,13 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
+let randomNum = Int.random(in: 0...100)
+if randomNum % 2 == 0 {
+print("heads")
+}
+else {
+print("tails")
+}
 
 Hint: use an if/else block along with the `%` operator
 
@@ -109,7 +177,20 @@ var d = 4
 
 // your code here
 ```
-
+if a < b && a < c && a < d {
+print("\(a) is the smallest number")
+}
+else if b < a && b < c && b < d {
+print("\(b) is the smallest number")
+}
+else if c < a && c < b && c < d {
+print("\(c) is the smallest number")
+}
+else if d < a && d < b && d < c {
+print ("\(d) is the smallest number")
+}
+Output:
+3 is the smallest number
 ***
 ## Question 9
 
@@ -123,7 +204,7 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
-
+// a,b,d,e
 ***
 ## Question 10
 
@@ -143,7 +224,7 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+// c
 
 ***
 ## Question 11
@@ -157,7 +238,7 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+//b,c
 
 ***
 ## Question 12
@@ -171,7 +252,7 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+//a,b,c,d
 ***
 ## Question 13
 
@@ -182,14 +263,14 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
-(b * c) + a
-b %= a
-b %= c
+a += b // 25
+b -= c // 1
+b * (c + a)  // 29
+(b * c) + a //29
+b %= a //  1
+b %= c // 1
 
-print(a + b + c)
+print(a + b + c) // 30
 
 ```
 
@@ -199,13 +280,13 @@ print(a + b + c)
 let div = 11 / 4
 
 ```swift
-1. The value of div is ____________________(or write "div1 will not compile")
+1. The value of div is _________2_________(or write "div1 will not compile")
 
 let div2 = 11.0 / 4.0
-2. The value of div2 is ________________________(or write "div2 will not compile")
+2. The value of div2 is _________2.75____________(or write "div2 will not compile")
 let isEqual = div == div2
 
-3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+3. The value of isEqual is___isEqual will not compile____ (or write "isEqual will not compile")
 
 
 ```
@@ -225,21 +306,22 @@ c. n is a Decimal
 d. In is an Int
 
 ```
-
+a, b, c
 # Bonus 
 
 ***
 ## Question 1
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
-
+Int is a whole number(positive or negative) and Double is a number that has a decimal component.
+Double take up more space then Int
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
-
+floats are stored in 32 bits and doubles in 64. Floats can have only 1 number after decimal, Doubles can have more
 ***
 
 ## Question 3
@@ -259,6 +341,7 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+d
 ***
 ## Question 4 
 
@@ -285,7 +368,10 @@ Output:
 
 
 ```
-
+var a = 123
+print(a % 4)
+output:
+3
 ***
 
 ## Question 5 
@@ -303,7 +389,13 @@ Expected Output:
 Even
 
 ```
-
+var number = 5
+if number % 2 == 0 {
+print ("Even")
+}
+else {
+print("Odd")
+}
 ***
 
 ## Question 6
@@ -315,7 +407,9 @@ var a = 2.0
 var b = 5.0
 
 ```
-
+var average = (a + b) / 2
+Output:
+3.5
 
 ***
 
@@ -332,7 +426,9 @@ var midtermGrade = 4.0
 var projectGrade = 3.0
 
 ```
-
+print(0.5 * finalsGrade + 0.2 * midtermGrade  + 0.3 * projectGrade)
+OUTPUT:
+2.7
 ***
 
 ## Question 8 
@@ -351,6 +447,12 @@ Output:
 4.2
 
 ```
+var mealCost:Double = 3.5
+var tip:Int = 20
+var totalCost = 0.2 * mealCost + mealCost
+print(mealCost)
+Output
+4.2
 ***
 
 ## Question 9
@@ -370,13 +472,39 @@ Output:
 "above average"
 
 ```
-***
-
-## Question 10 
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.0
+var averageGrade = ( grade1 + grade2 + grade3 + yourGrade ) / 4
+if yourGrade > averageGrade {
+print("Above Average.")
+} else {
+print("Below Average.")
+}
+Output:
+"above average"
+ 7 10 
 
 A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
+var numberOfFields = 30
+var wheatYieldof = 150.5
+var weatherWasGood = true
+
+
+
+var harvestWithBadWeather = wheatYieldof * Double(numberOfFields)
+var harvestWithGoodWeather = harvestWithBadWeather / 2 + harvestWithBadWeather
+if weatherWasGood == true {
+print("Total amount of wheat that the farmer will harvest is \(harvestWithGoodWeather)")
+}
+else {
+print("Total amount of wheat that the farmer will harvest is \(harvestWithBadWeather)")
+}
+
+
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
