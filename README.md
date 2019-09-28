@@ -21,9 +21,8 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 ```
-
-```
 Answer
+```swift
 
 var grade1 = 7.0
 var grade2 = 9.0
@@ -46,7 +45,6 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
 ```
 Answer 
 ```swift
@@ -70,7 +68,6 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
 ```
 Answer
 ```swift
@@ -93,7 +90,6 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
 ```
 Answer
 ```swift
@@ -113,7 +109,19 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+```
+Answer
+```swift
+
+if baconsAge < 7 && eggsAge < 21 {
+print("you can cook bacon and eggs!")
+}
+if baconsAge > 7 {
+    print("Time to throw out the bacon it is \(baconsAge) days old!")
+}
+if eggsAge > 21 {
+    print("Throw out the eggs, they are \(eggsAge) days old!")
+}
 ```
 
 ***
@@ -125,7 +133,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+```
+Answer
+```swift
+let leap4 = year % 4
+let leap100 = year % 100
+let leap400 = year % 400
+
+if leap100 == 0 || leap400 == 0 || leap4 != 0 {
+    print("It is not a leap year.")
+} else {
+    print("It is a leap year!")
+}
 ```
 
 ***
@@ -136,7 +155,30 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+```
+Answer
+```swift
+let randomNum = Int.random(in: 0...100)
+//let randomNum = 0
+
+switch randomNum {
+case 1..<50:
+    print("Heads!")
+case 51...100:
+    print("Tails!")
+default:
+    print("Did this coin just land on its side?")
+}
+
+// I had a little fun with this one, since 0...100 is 101 digits. Maybe this was the goal to learn how to apply the default? I commented out my test run to ensure 0 resulted in the default statement.
+
+if randomNum % 2 == 0 {
+    print("Heads!")
+} else {
+    print("Tails!")
+}
+
+//After writing the swtich statement, I saw the hint and wrote the code to apply it. I see how much simpler this is. 
 ```
 
 Hint: use an if/else block along with the `%` operator
