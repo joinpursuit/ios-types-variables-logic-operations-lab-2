@@ -290,7 +290,7 @@ let div = 11 / 4
 1. The value of div is ___2_______________(or write "div1 will not compile")
 
 let div2 = 11.0 / 4.0
-2. The value of div2 is __________2.5______________(or write "div2 will not compile")
+2. The value of div2 is __________[2.5]__________(or write "div2 will not compile")
 let isEqual = div == div2
 
 3. The value of isEqual is______False_______________ (or write "isEqual will not compile")
