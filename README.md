@@ -20,7 +20,22 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+/* Question #1 Answer
+
+var yourGrade: Double = 6.75
+var classAverage: Double = ( (grade1 + grade2 + grade3) / 3 )
+
+if( yourGrade > classAverage){
+
+      print("above average")
+      
+} else{
+
+     print("below average")
+      
+}
+
+*/
 ```
 
 ***
@@ -31,7 +46,18 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+/* Question #2 Answer
+
+if( number % 2 == 0){
+
+    print("even")
+    
+}else{
+
+    print("odd")
+    
+}
+*/
 ```
 
 ***
@@ -43,7 +69,19 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+/* Question #3 Answer
+
+if( a % b == 0){
+
+    print("divisible")
+    
+} else {
+    
+    print("not divisible")
+    
+}
+
+*/
 ```
 
 ***
@@ -56,7 +94,18 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+/* Question #4 Answer
+
+if( (a == b) || (a == c) || (b == c)){
+
+    print("At least two variables have the same value.")
+
+} else {
+
+    print("All of the values are different")
+
+}
+*/
 ```
 
 ***
@@ -68,7 +117,24 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+/* Question #5 Answer
+    
+if( (baconAge >= 21) && (eggsAge >= 7)){
+
+        print("Throw out both bacon and eggs")
+        
+} else if (baconAge >= 21) {
+        
+        print("Throw out bacon")
+        
+} else if (eggsAge >= 7){
+
+        print("Throw out eggs")
+        
+} else{
+        print("You can cook bacon and eggs!")
+}
+*/
 ```
 
 ***
@@ -80,7 +146,25 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+/* Question #6 Answer
+
+if( year % 100 == 0 ){
+
+    if( year % 400 == 0){
+        print("Leap Year!")
+        }
+    
+} else if ( year % 4 == 0 ) {
+
+    print("Leap Year!")
+    
+} else {
+
+    print("Not a leap year!")
+    
+}
+
+*/
 ```
 
 ***
@@ -91,7 +175,19 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+/* Question #7 Answer
+
+if( randomNum % 2 == 0 ){
+
+    print("Tails")
+    
+} else {
+
+    print("Heads")
+
+}
+
+*/
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +203,25 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+/* Question #8 Answer
+
+if( (a < b) && (a < c) && (a < d) ) {
+
+    print("a")
+    
+} else if( (b < a) && (b < c) && (b < d) ) {
+
+    print("b")
+    
+} else if( (c < a) && (c < b) && (c < d) ) {
+
+    print("c")
+    
+} else {
+    print("d")
+}
+
+*/
 ```
 
 ***
@@ -122,6 +236,18 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+
+/* Question #9 Answer
+
+a. True
+b. True
+c. False
+d. True
+e. True
+
+Expressions a, b, d, and e all evaluate to true.
+
+*/
 ```
 
 ***
@@ -130,9 +256,9 @@ e. !(3 != 3)
 Given the below, which of the following expressions evaluate to true?
 
 ```swift
- let x = 5 > 4
- let y = 100 / 10 == 1
- let z = 6
+ let x = 5 > 4 // True
+ let y = 100 / 10 == 1 // False
+ let z = 6 
 ```
 
 ```swift
@@ -141,6 +267,18 @@ b. x || y || z == 1
 c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
+
+/* Question #10 Answer
+
+a. False
+b. True
+c. True
+d. False
+e. False
+
+Expressions b, and c both evaluate to true.
+
+*/
 
 ```
 
@@ -156,6 +294,16 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+/* Question # 11 Answer
+
+a. Integers may be unsigned. False
+b. In mathematics yes, but in computing no. Infinity is unattainable. False
+c. True
+d. Integers may not contain decimals. False
+
+Statement c is True.
+*/
+
 ```
 
 
@@ -170,6 +318,12 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+/* Question #12 Answer
+ 
+All of the above code snippets will compile  
+  
+*/
+
 ```
 
 ***
@@ -182,14 +336,20 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
-(b * c) + a
-b %= a
-b %= c
+a += b // a = 25
+b -= c // b = 1
+b * (c + a) // 120
+(b * c) + a // 29
+b %= a // b = 1
+b %= c // b = 1
 
 print(a + b + c)
+
+/* Question #13 Answer
+
+print(a + b + c) // Will output 30
+
+*/
 
 ```
 
@@ -206,6 +366,20 @@ let div2 = 11.0 / 4.0
 let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+
+/* Question #14 Answer
+
+1. The value of div is 2.
+
+let div2 = 11.0 / 4.0
+
+2. The value of div2 is 2.75.
+
+let isEqual = div == div2
+
+3. The value of isEqual is False.
+
+*/
 
 
 ```
@@ -224,21 +398,35 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+/* Question #15 Answer
+
+Statement b is true, "n is a Double."
+
+*/
 ```
 
 # Bonus 
 
 ***
-## Question 1
+## Question 1 
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+/*  Bonus Question #1 Answer
+
+Integers can represent positive and negative whole numbers. Double can represent floating point numbers with includes whole numbers and are of both the postive and negative persuasion. Intergers take up a fixed amount of space in memory.
+
+*/
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+/* Bonus Question #2 Answer
+
+Ostensibly Float and Double data types are more or less the same. However they are two different data types, and operations involving more than one of each type will not work. In addition, Double represents a 64-bit floating point number, while Float represents a 32-bit floating point number.
+*/
 
 ***
 
@@ -257,6 +445,12 @@ a. It will print 48.9
 b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
+
+/* Bonus Question #3 Answer
+
+D. It will gove a compile-time error. Double and Float type data cannot be added together.
+
+*/
 
 ```
 ***
@@ -283,6 +477,19 @@ var a = 337
 Output:
 7
 
+/* Bonus Question #4 Answer
+
+Example 1:
+
+var output = a % 10
+print(output)
+
+Example 2:
+
+var output = a % 10
+print(output)
+
+*/
 
 ```
 
@@ -302,6 +509,21 @@ var number = 6
 Expected Output: 
 Even
 
+/* Bonus Question #5 Answer
+
+Example 1:
+
+if(number % 2 == 0){
+
+    print("Even")
+    
+} else{
+
+    print("Odd")
+}
+
+*/
+
 ```
 
 ***
@@ -313,6 +535,13 @@ You are given 2 Doubles a and b. Print their average
 ```swift
 var a = 2.0
 var b = 5.0
+
+/* Bonus Question #6 Answer
+
+var sum = a + b
+print(sum / 2.0)
+
+*/
 
 ```
 
@@ -330,6 +559,13 @@ You are given 3 grades stored in 3 variables of type Double finalsGrade, midterm
 var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
+
+/* Bonus Question #7 Answer
+
+var classGrade = (finalsGrade * .5) + (midtermGrade * .2) + (projectGrade * .3)
+print(classGrade)
+
+*/
 
 ```
 
@@ -350,6 +586,15 @@ var tip:Int = 20
 Output:
 4.2
 
+/* Bonus Question #8 Answer
+
+var percentTip: Double = Double(tip) / 100.0
+var tipToAdd: Double = mealCost * percentageTip
+var totalMealCost = mealCost + tipToAdd
+print("totalMealCost")
+
+*/
+
 ```
 ***
 
@@ -369,6 +614,21 @@ var yourGrade = 8.0
 Output:
 "above average"
 
+/* Bonus Question #9 Answer
+
+var classAverage = ((grade1 + grade2 + grade3 + yourGrade) / 4)
+
+if(yourGrade > classAverage){
+
+    print("above average")
+    
+} else {
+
+    print("below average")
+
+}
+
+*/
 ```
 ***
 
@@ -380,5 +640,25 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
+/* Bonus Question #10 Answer
+
+var numberOfFields: Int
+var wheatYieldof: Double
+var weatherWasGood: Bool
+var totalWheatHarvested: Double 
+
+if(!weatherWasGood){
+
+    totalWheatHarvested = Double(numberOfFields) * wheatYieldof
+    
+} else {
+
+    totalWheatHarvested = Double(numberOfFields) * (wheatYieldof + (wheatYieldof * .5)) 
+
+}
+
+print(totalWheatHarvested)
+
+*/
 ```
 
