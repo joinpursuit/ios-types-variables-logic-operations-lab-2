@@ -106,7 +106,16 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+//
+if year % 4 == 0 {
+    if year % 100 != 0 && year % 400 == 0 {
+        print("Not a leap year!")
+    } else {
+        print("Leap year!")
+    }
+} else {
+    print("Not a leap year!")
+}
 ```
 
 ***
@@ -117,7 +126,13 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+// if coinToss == 0 {
+    print("heads")
+} else if coinToss == 1 {
+    print("tails")
+}else {
+    print("Call heads or tails!")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -133,7 +148,15 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// if a < (a + b + c + d) / 4 {
+    print("a has the smallest value.")
+} else if b < (a + b + c + d) / 4 {
+    print("b has the smallest value.")
+} else if c < (a + b + c + d) / 4 {
+    print("c has the smallest value.")
+} else {
+    print("d has the smallest value.")
+}
 ```
 
 ***
@@ -148,6 +171,7 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+ANSWER: a, b, d, e
 ```
 
 ***
@@ -168,6 +192,7 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+ANSWER: b, c
 ```
 
 
@@ -182,6 +207,7 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+ANSWER: c
 ```
 
 
@@ -196,6 +222,7 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+ANSWER: all of the above
 ```
 
 ***
@@ -217,10 +244,11 @@ b %= c
 
 print(a + b + c)
 
+ANSWER: The code will print 30
 ```
 
 ***
-## Question 14
+## Question 14 
 
 let div = 11 / 4
 
@@ -233,7 +261,9 @@ let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
-
+Answer: let div1: Double = 11 / 4
+let div2 = 11.0 / 4.0
+let isEqual = div1 == div2
 ```
 ***
 ## Question 15
@@ -250,6 +280,7 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+ANSWER: b
 ```
 
 # Bonus 
@@ -259,12 +290,13 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+ANSWER: a double have decimal values, Ints are whole numbers. Doubles have more space to hold larger number values.
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
-
+ANSWER: Doubles can hold more values of a number, floats will cut off after a certain amount after the decimal.
 
 ***
 
@@ -284,6 +316,7 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+ANSWER: d
 ```
 ***
 ## Question 4 
@@ -309,6 +342,7 @@ var a = 337
 Output:
 7
 
+ANSWER: print(a % 10)
 
 ```
 
@@ -328,6 +362,12 @@ var number = 6
 Expected Output: 
 Even
 
+ANSWER: var number = 5
+if number % 2 == 0{
+print("Even")
+} else {
+print("Odd")
+}
 ```
 
 ***
@@ -340,6 +380,8 @@ You are given 2 Doubles a and b. Print their average
 var a = 2.0
 var b = 5.0
 
+ANSWER: let average = (a + b) / 2
+        print(average)
 ```
 
 
@@ -395,6 +437,12 @@ var yourGrade = 8.0
 Output:
 "above average"
 
+ANSWER: let average = (grade1 + grade2 + grade3 + yourGrade) / 4
+if yourGrade > average {
+    print("above average")
+} else {
+    print("below average")
+}
 ```
 ***
 
