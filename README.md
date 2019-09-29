@@ -1,4 +1,4 @@
-# Types Variables Logic and Operations Lab 2
+le# Types Variables Logic and Operations Lab 2
 
 ## Instructions for lab submission
 
@@ -20,7 +20,14 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+let yourGrade:Double = 4.0
+var averag = (yourGrade + grade1 + grade2 + grade3) / 4
+if yourGrade > averag {
+    print("above average")
+} else {
+    print("below average")
+}
+
 ```
 
 ***
@@ -30,20 +37,24 @@ You are given a number. Print even if the number is even or odd otherwise.
 
 ```swift
 let number = 2
+if number % 2 == 0{
+    print("even")
+} else {
+    print("odd")
+}
 
-// your code here
 ```
 
 ***
 ## Question 3
 
-You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible by `b` and `"not divisible"` otherwise.
+You are given two numbers `a` and `b`. Print `"divisible"` if `a` isdivisible by `b` and `"not divisible"` otherwise.
 
 ```swift
 var a = 12
 var b = 3
+print(a % b == 0 ? "divisible" : "not divisible" )
 
-// code here
 ```
 
 ***
@@ -55,8 +66,11 @@ You are given three variables `a`, `b` and `c`. Check if at least two variables 
 var a = 2
 var b = 3
 var c = 2
-
-// your code here
+if a == b || b == c || a == c {
+print("At least two variables are the same")
+} else {
+print("All values are different")
+}
 ```
 
 ***
@@ -68,7 +82,15 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+if baconAge <= 7 && eggsAge <= 21{
+print("cook bacon and eggs")
+} else if baconAge <= 7 && eggsAge > 21 {
+print("throwout eggs")
+} else if baconAge > 7 && eggsAge <= 21 {
+print("throwout bacon")
+} else if baconAge > 7 && eggsAge > 21 {
+print("throwout bacon and eggs")
+}
 ```
 
 ***
@@ -78,9 +100,13 @@ You are given a year, determine if it’s a leap year. A leap year is a year con
 The above rule is valid except that every 100 years special rules apply. Years that are divisible by 100 are not leap years if they are not also divisible by 400. For example 1900 was not a leap year, but 2000 was. Print `"Leap year!"` or `"Not a leap year!"` depending on the year you are provided.
 
 ```swift
-let year = 2014
 
-// your code here
+let year = 2014
+if ((year % 4 == 0) && (year % 100 == 0) && (year % 400 == 0)) || (year % 4 == 0) && (year % 100 != 0) {
+    print("Leap year!")
+} else {
+    print("Not a leap year!")
+}
 ```
 
 ***
@@ -89,9 +115,12 @@ let year = 2014
 If you use `random()` it will give you a random number within a specified range. Generate a random number and use it to simulate a coin toss. Print `"heads"` or `"tails"`.
 
 ```swift
-let randomNum = Int.random(in: 0...100)
-
-// your code here
+var randomNum = Int.random(in: 0...1)
+if randomNum == 0 {
+    print("heads")
+} else {
+    print("tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +136,16 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+if a < b  && a < c && a < d{
+    print(a)
+} else if b < c && b < d {
+    print(b)
+} else if c < d {
+    print(c)
+} else {
+    print(d)
+}
+
 ```
 
 ***
@@ -122,7 +160,10 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+
 ```
+Answers: A,B,D,E
+
 
 ***
 ## Question 10
@@ -142,7 +183,10 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+
 ```
+Answers: B,C
+
 
 
 ***
@@ -157,7 +201,7 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+Answer: C
 
 ***
 ## Question 12
@@ -170,7 +214,9 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+
 ```
+Answer: All of the above
 
 ***
 ## Question 13
@@ -191,7 +237,9 @@ b %= c
 
 print(a + b + c)
 
+
 ```
+Answer: 30
 
 ***
 ## Question 14
@@ -209,6 +257,10 @@ let isEqual = div == div2
 
 
 ```
+1: 2
+2: 2.75
+3: Will not compile
+
 ***
 ## Question 15
 ```swift
@@ -225,6 +277,8 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+Answer: B
+
 
 # Bonus 
 
@@ -233,11 +287,15 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+Answer: Double stores numbers to several decimal places, whereas integers only store as whole numbers, with decimals being rounded to those whole numbers to accomadate the data type.
+
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
+
+Answer: A float is 32 bit and a double is 64 bit. Because of this, doubles can include more decimal places and are more accurate because of it.
 
 
 ***
