@@ -21,6 +21,26 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
+
+_______________________
+Answer:
+
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 9.5
+
+var averageGrade = (grade1 + grade2 + grade3 + yourGrade) / 4  // Output 7.625
+
+if yourGrade < averageGrade {
+    print("Below average")
+} else if yourGrade > averageGrade {
+print("Above average")
+} else {
+print("Average")
+}
+
+// Prints "Above average"
 ```
 
 ***
@@ -32,6 +52,18 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+_______________________
+Answer:
+
+let number = 2
+
+if number % 2 == 0 {
+print("Even")
+} else {
+print("Odd")
+}
+
+// Prints "Even"
 ```
 
 ***
@@ -44,6 +76,21 @@ var a = 12
 var b = 3
 
 // code here
+______________________________
+
+Answer:
+
+var a = 12
+var b = 3
+
+if a % b == 0 {
+print("Divisible")
+} else {
+print("Not divisible")
+}
+
+// Prints "Divisible."
+
 ```
 
 ***
@@ -57,6 +104,40 @@ var b = 3
 var c = 2
 
 // your code here
+
+________________________________
+Answer:
+
+var a = 2
+var b = 3
+var c = 2
+
+if a == b || b == c || a == c {
+    print("At least two variables have the same value.");
+} else {
+    print("All the values are different.")
+}
+
+// Prints "At least two variables have the same value"
+
+WE COUDL WRITE IT IN OTHER WAY:
+
+var a = 2
+var b = 3
+var c = 2
+
+
+if a == b {
+    print("At least two variables have the same value.")
+} else if b == c {
+    print("At least two variables have the same value.")
+} else if a == c {
+    print("At least two variables have the same value.")
+} else {
+    print("All the values are different.")
+}
+
+// Prints "At least two variables have the same value"
 ```
 
 ***
@@ -69,6 +150,25 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+
+_____________________________________________
+
+Answer:
+
+var baconAge = 6
+var eggsAge = 12
+
+if baconAge <= 7 && eggsAge <= 21 {
+print("You can cook bacon and eggs.")
+} else if baconAge <= 7 && eggsAge > 21 {
+    print("You can cook bacon, but throw out eggs.")
+} else if eggsAge <= 21 && baconAge > 7 {
+    print("You can cook eggs, but throw out bacon.")
+} else {
+print("Throw out bacon and eggs.")
+}
+
+// Prints "You can cook bacon and eggs"
 ```
 
 ***
@@ -81,6 +181,21 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+________________________
+Answer:
+let year = 2014
+
+if year % 400 == 0 {
+    print("Leap year!")
+} else if year % 4 == 0 && year % 100 == 0 {
+    print("Not a leap year!")
+} else if year % 4 == 0 {
+    print("Leap year!")
+} else {
+    print("Not a leap year!")
+}
+
+// Output "Not a leap year!"
 ```
 
 ***
@@ -108,6 +223,18 @@ var c = 3
 var d = 4
 
 // your code here
+
+_______________________
+Answer:
+
+let randomNumber = Int.random(in: 0...100)
+
+if randomNumber % 2 == 0 {
+print("Heads")
+} else {
+print("Tails")
+}
+
 ```
 
 ***
@@ -121,6 +248,13 @@ b. !(3 > 3)
 c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
+
+__________________________________________________
+Answer:
+a
+b
+d
+e
 
 ```
 
@@ -141,6 +275,11 @@ b. x || y || z == 1
 c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
+____________________________
+Answer:
+b
+c
+
 
 ```
 
@@ -156,6 +295,10 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+__________________________________
+Answer:
+c
+
 ```
 
 
@@ -169,6 +312,13 @@ a. let numberOfPages: Int = 500
 b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
+
+__________________________________________________
+Answer:
+a
+b
+c
+d
 
 ```
 
@@ -191,6 +341,24 @@ b %= c
 
 print(a + b + c)
 
+________________________
+Answer:
+
+var a = 20
+var b = 5
+var c = 4
+
+a += b  // Equals a + b = newA 20 + 5 = 25
+b -= c  // Equals b - c = newB 5 - 4 = 1
+b * (c + a)  // 29
+(b * c) + a  // 29
+b %= a  // Equals newB % newA = newNewB  1 % 25 = 1
+b %= c  // Equals newNewB % c = superNewNewB 1 % 4 = 1
+
+print(a + b + c)  // newA + superNewNewB + c = 25 + 1 + 4 = 30
+
+
+
 ```
 
 ***
@@ -206,6 +374,16 @@ let div2 = 11.0 / 4.0
 let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+
+_____________________________________________________________________________________
+Answer:
+
+1. The value of div is 2.
+
+2. The value of div2 is 2.75
+
+3. isEqual will not compile.
+
 
 
 ```
@@ -224,6 +402,9 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+________________________
+Answer:
+b // I think it can be a Float as well but should be assign as var n: Float = 7.5
 ```
 
 # Bonus 
@@ -233,11 +414,18 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+_______________________________________________________________
+Answer:
+Double reprecent decimals and Int represent whole numbers. Double store numbers more precise and Int store numbers without decimals. 
+
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
+Float has 6 digits after the period and uses 32 bits to store their data.
+Double has 15 digits after period and uses 64 bits to store their data.
+I read that in app that does requares speed vs. exact numbers Floats would be preferable to use. Ans vise versa.
 
 
 ***
@@ -257,6 +445,10 @@ a. It will print 48.9
 b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
+
+__________________________________
+Answer:
+d
 
 ```
 ***
@@ -284,6 +476,23 @@ Output:
 7
 
 
+_________________________
+Answer:
+
+Example 1:
+var a = 123
+
+a %= 10
+
+print(a) // Output 3
+
+Example 2:
+var a = 337
+
+a %= 10
+
+print(b) // Output 7
+
 ```
 
 ***
@@ -302,6 +511,28 @@ var number = 6
 Expected Output: 
 Even
 
+-------------------
+Answer:
+var number = 5
+
+if number % 2 == 0 {
+print("Even")
+} else {
+print("Odd")
+}
+
+// Output Odd
+
+Example 1:
+var number = 6
+
+if number % 2 == 0 {
+print("Even")
+} else {
+print("Odd")
+}
+ 
+ // Output Even
 ```
 
 ***
@@ -313,6 +544,16 @@ You are given 2 Doubles a and b. Print their average
 ```swift
 var a = 2.0
 var b = 5.0
+
+________________
+Answer:
+
+var a = 2.0
+var b = 5.0
+
+var average = (a + b) / 2
+
+print("average")  // Output 3.5
 
 ```
 
@@ -332,6 +573,18 @@ var midtermGrade = 4.0
 var projectGrade = 3.0
 
 ```
+Answer:
+var finalsGrade = 2.0
+var midtermGrade = 4.0
+var projectGrade = 3.0
+
+var finalGradeToTotal = 2.0 * 0.5
+var midtermGradeToTotal = 4.0 * 0.2
+var projectGradeToTotal = 3.0 * 0.3
+
+var gradeForTheClass = finalGradeToTotal + midtermGradeToTotal + projectGradeToTotal
+
+// Output 2.7
 
 ***
 
@@ -351,6 +604,10 @@ Output:
 4.2
 
 ```
+---------------------------------------
+Answer:
+I don't know how to solve since there are different types of data. Did I miss something?
+
 ***
 
 ## Question 9
@@ -368,6 +625,23 @@ var yourGrade = 8.0
 
 Output:
 "above average"
+____________________________
+Answer:
+
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.0
+
+var average = (grade1 + grade2 + grade3 + yourGrade) / 4
+
+if yourGrade > average {
+print("above average")
+} else if yourGrade == average {
+print("average")
+} else {
+print("below average")
+}
 
 ```
 ***
@@ -377,6 +651,10 @@ Output:
 A farmer is harvesting wheat from a number of wheat fields, given in a variable numberOfFields of type Int. Each field produces the same quantity of wheat given in a variable wheatYieldof type Double. Sometimes the harvest is increased by 50% due to favorable weather conditions. You are given this information in a variable weatherWasGood of type Bool.
 
 ### Print the total amount of wheat that the farmer will harvest.
+
+---------------------------------------
+Answer:
+I don't know how to solve it without changing Int to Double. Did I miss something?
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
