@@ -408,16 +408,25 @@ Statement b is true, "n is a Double."
 # Bonus 
 
 ***
-## Question 1
+## Question 1 
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+/*  Bonus Question #1 Answer
+
+Integers can represent positive and negative whole numbers. Double can represent floating point numbers with includes whole numbers and are of both the postive and negative persuasion. Intergers take up a fixed amount of space in memory.
+
+*/
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+/* Bonus Question #2 Answer
+
+Ostensibly Float and Double data types are more or less the same. However they are two different data types, and operations involving more than one of each type will not work. In addition, Double represents a 64-bit floating point number, while Float represents a 32-bit floating point number.
+*/
 
 ***
 
@@ -436,6 +445,12 @@ a. It will print 48.9
 b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
+
+/* Bonus Question #3 Answer
+
+D. It will gove a compile-time error. Double and Float type data cannot be added together.
+
+*/
 
 ```
 ***
@@ -462,6 +477,19 @@ var a = 337
 Output:
 7
 
+/* Bonus Question #4 Answer
+
+Example 1:
+
+var output = a % 10
+print(output)
+
+Example 2:
+
+var output = a % 10
+print(output)
+
+*/
 
 ```
 
@@ -481,6 +509,21 @@ var number = 6
 Expected Output: 
 Even
 
+/* Bonus Question #5 Answer
+
+Example 1:
+
+if(number % 2 == 0){
+
+    print("Even")
+    
+} else{
+
+    print("Odd")
+}
+
+*/
+
 ```
 
 ***
@@ -492,6 +535,13 @@ You are given 2 Doubles a and b. Print their average
 ```swift
 var a = 2.0
 var b = 5.0
+
+/* Bonus Question #6 Answer
+
+var sum = a + b
+print(sum / 2.0)
+
+*/
 
 ```
 
@@ -509,6 +559,13 @@ You are given 3 grades stored in 3 variables of type Double finalsGrade, midterm
 var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
+
+/* Bonus Question #7 Answer
+
+var classGrade = (finalsGrade * .5) + (midtermGrade * .2) + (projectGrade * .3)
+print(classGrade)
+
+*/
 
 ```
 
@@ -529,6 +586,15 @@ var tip:Int = 20
 Output:
 4.2
 
+/* Bonus Question #8 Answer
+
+var percentTip: Double = Double(tip) / 100.0
+var tipToAdd: Double = mealCost * percentageTip
+var totalMealCost = mealCost + tipToAdd
+print("totalMealCost")
+
+*/
+
 ```
 ***
 
@@ -548,6 +614,21 @@ var yourGrade = 8.0
 Output:
 "above average"
 
+/* Bonus Question #9 Answer
+
+var classAverage = ((grade1 + grade2 + grade3 + yourGrade) / 4)
+
+if(yourGrade > classAverage){
+
+    print("above average")
+    
+} else {
+
+    print("below average")
+
+}
+
+*/
 ```
 ***
 
@@ -559,5 +640,25 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
+/* Bonus Question #10 Answer
+
+var numberOfFields: Int
+var wheatYieldof: Double
+var weatherWasGood: Bool
+var totalWheatHarvested: Double 
+
+if(!weatherWasGood){
+
+    totalWheatHarvested = Double(numberOfFields) * wheatYieldof
+    
+} else {
+
+    totalWheatHarvested = Double(numberOfFields) * (wheatYieldof + (wheatYieldof * .5)) 
+
+}
+
+print(totalWheatHarvested)
+
+*/
 ```
 
