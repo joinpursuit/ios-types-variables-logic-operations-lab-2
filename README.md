@@ -132,7 +132,12 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// if 
+//  if randomNum % 2 = 0 {
+        print("heads")
+        }
+        else {
+            print("tails")
+        }
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -148,7 +153,21 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+//  var sVar = a
+    
+    if b < sVar {
+    sVar = b
+    }
+    
+    if c < sVar {
+    sVar = c
+    }
+    
+    if d < sVar {
+    sVar = d
+    }
+    
+    print(sVar)
 ```
 
 ***
@@ -163,6 +182,8 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+//  answer:
+    a, b, d, e
 ```
 
 ***
@@ -183,6 +204,8 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+//  b, c
+    
 ```
 
 
@@ -197,6 +220,7 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+// c
 ```
 
 
@@ -211,6 +235,7 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+//  a, b, c, d
 ```
 
 ***
@@ -232,6 +257,7 @@ b %= c
 
 print(a + b + c)
 
+//  29
 ```
 
 ***
@@ -248,7 +274,9 @@ let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
-
+//  1) 2
+    2) 2.75
+    3) isEqual will not compile
 ```
 ***
 ## Question 15
@@ -265,6 +293,7 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+//  b, c
 ```
 
 # Bonus 
