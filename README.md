@@ -91,6 +91,10 @@ if a == b || a == c || b == c {
     print("All the values are different")
 }
 
+OR
+
+print(a == b || a == c || b == c ? "At least two variables have the same value" : "All the values are different")
+
 
 ```
 
@@ -103,7 +107,17 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+// Answer:
+
+var baconAge = 6
+var eggsAge = 12
+if baconAge > 7 && eggsAge > 21{
+print ("throw out bacon and eggs")
+} else if baconAge < 7 && eggsAge < 21 {
+    print("You can cook bacon and eggs")
+}
+print(baconAge > 7  ? "throw out bacon" : "you can eat bacon")
+print(eggsAge > 21 ? "throw out eggs" : "")
 ```
 
 ***
@@ -115,8 +129,12 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+// Answer:
+
+let year = 2014
+print(year % 4 == 0 || year % 400 == 0 && year % 100 == 0 ? "Leap year" : "Not a leap year")
 ```
+
 
 ***
 ## Question 7
@@ -126,7 +144,13 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+// Answer:
+
+let randomNum = Int.random(in:0...100)
+print(randomNum % 2 == 0 ? "heads" : "tails")
+
+
+
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -142,7 +166,26 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// Answer:
+
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+
+if a < b && a < c && a < d {
+  print(a)
+} else if b < a && b < c && b < d {
+    print(b)
+} else if c < a && c < b && c < d {
+    print(c)
+} else {
+    print(d)
+}
+
+
+
 ```
 
 ***
@@ -156,6 +199,9 @@ b. !(3 > 3)
 c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
+
+// Answer:
+a, b, d, e
 
 ```
 
@@ -177,6 +223,10 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+//Answer:
+
+C
+
 ```
 
 
@@ -191,6 +241,9 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+
+//Answer:
+a, b
 ```
 
 
@@ -204,6 +257,10 @@ a. let numberOfPages: Int = 500
 b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
+
+//Answer:
+
+a, b, c, d
 
 ```
 
@@ -226,6 +283,14 @@ b %= c
 
 print(a + b + c)
 
+Answer:
+a +=b // 25
+b -=c // 4
+b * (c + a) // 120
+(b * c) + a // 40
+b %= a // 5
+b %= c // 1
+
 ```
 
 ***
@@ -242,6 +307,10 @@ let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
+// Answer:
+1. 2
+2. 2.75
+3. isEqual will not compile
 
 ```
 ***
@@ -259,6 +328,8 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+//Answer:
+b
 ```
 
 # Bonus 
@@ -267,12 +338,14 @@ d. In is an Int
 ## Question 1
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
+Doubles contain decimal points while Int's must be whole numbers.
 
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
+A Double can store double the bytes that a Float can.
 
 
 ***
@@ -293,6 +366,9 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+
+//Answer:
+d. It will give a compile-time error
 ```
 ***
 ## Question 4 
@@ -320,6 +396,7 @@ Output:
 
 
 ```
+
 
 ***
 
@@ -416,4 +493,5 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
 ```
+
 
