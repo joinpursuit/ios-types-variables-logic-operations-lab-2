@@ -22,7 +22,19 @@ var grade3 = 5.0
 
 // your code here
 ```
+ar grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
 
+var classAvg = 7.0
+
+var grade = 7
+
+if grade > 7{
+    print("Above average! 😊")
+}   else{
+    print("Below average 😢")
+}
 ***
 ## Question 2
 
@@ -33,6 +45,16 @@ let number = 2
 
 // your code here
 ```
+let number = 2
+
+var even = number % 2 == 0
+var odd = number % 2 != 0
+
+if even{
+    print("even")
+}   else{
+    print("odd")
+}
 
 ***
 ## Question 3
@@ -45,7 +67,13 @@ var b = 3
 
 // code here
 ```
+var a = 12
+var b = 3
 
+if a % b == 0{
+    print("divisible")
+}   else{
+    print("not divisible")
 ***
 ## Question 4
 
@@ -58,6 +86,15 @@ var c = 2
 
 // your code here
 ```
+var a = 2
+var b = 3
+var c = 2
+
+if a == b || a == c  || b == c{
+    print("At least two variables have the same value")
+}   else{
+    print("All the values are different")
+}
 
 ***
 ## Question 5
@@ -70,11 +107,21 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+if baconAge > 7{
+    print("throw out bacon 🤮")
+}
+if eggsAge > 21{
+print("throw out eggs 🤢")
+}
+if baconAge < 7 && eggsAge < 21{
+    print("you can cook bacon and eggs! 😋")
+}
+
 
 ***
 ## Question 6
 
-You are given a year, determine if it’s a leap year. A leap year is a year containing an extra day. It has 366 days instead of the normal 365 days. The extra day is added in February, which has 29 days instead of the normal 28 days. Leap years occur every 4 years. 2012 was a leap year and 2016 will also be a leap year.
+You are given a year, determine if it’s a leap year. A leap year is a year containing an extra day. It has 366 days instead of the normal 365 days. The extra day is added in February, which has 29 days instead of the normal 28 days. Leap years occur every 4 years. 2012 was a leap year and 2016 will also be a leap year. 
 The above rule is valid except that every 100 years special rules apply. Years that are divisible by 100 are not leap years if they are not also divisible by 400. For example 1900 was not a leap year, but 2000 was. Print `"Leap year!"` or `"Not a leap year!"` depending on the year you are provided.
 
 ```swift
@@ -82,6 +129,15 @@ let year = 2014
 
 // your code here
 ```
+let year = 2014
+
+let conditionOne = year % 4 == 0 && year % 100 != 0 || year % 400 == 0
+
+if conditionOne{
+    print("Leap year!")
+}   else{
+    print("Not a leap year!")
+}
 
 ***
 ## Question 7
@@ -93,7 +149,15 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
+let randomNum = Int.random(in: 0...100)
 
+if randomNum % 2 == 0{
+    print("Heads!")
+}   else{
+    print("Tails!")
+}
+
+```
 Hint: use an if/else block along with the `%` operator
 
 ***
@@ -109,7 +173,18 @@ var d = 4
 
 // your code here
 ```
-
+if a < b && a < c && a < d{
+    print(a)
+}
+if b < a && b < c && b < d{
+    print(b)
+}
+if c < a && c < b && c < d{
+    print(c)
+}
+if d < a && d < b && d < c{
+    print(d)
+}
 ***
 ## Question 9
 
@@ -123,6 +198,7 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+a. b. d. e. (All answers except for c. will return as true
 
 ***
 ## Question 10
@@ -143,7 +219,7 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+b. and c. will return as true. b. uses the 'or' comparison operator so only one of the comparissons have to be right
 
 ***
 ## Question 11
@@ -157,7 +233,10 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+None of the above. Integers don't need to have a positive sign when a pos number.
+Integers have a memory range of 4-32 bits so the compiler will not be able to return too huge of a number.
+As mentioned before, the Integer type is fluid between 4-32 bits, not fixed on just one.
+Integers are not capable of returning decimals.
 
 ***
 ## Question 12
@@ -171,6 +250,8 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+a.b.c.d. --
+They will all push successfully, although the names declared are misleading, their data types are not based on the wording/labelling.
 
 ***
 ## Question 13
@@ -192,6 +273,7 @@ b %= c
 print(a + b + c)
 
 ```
+the code will print the number 30.
 
 ***
 ## Question 14
@@ -203,18 +285,23 @@ let div = 11 / 4
 
 let div2 = 11.0 / 4.0
 2. The value of div2 is ________________________(or write "div2 will not compile")
-let isEqual = div == div2
 
+let isEqual = div == div2
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
 
 ```
+1. The value of div is 2
+2. The value of div2 is 2.75
+3. The value of isEqual will not compile because div1 is type integer and div2 is a double.
+
 ***
 ## Question 15
 ```swift
 var n = 7.5
 
 ```
+
 
 What is true about the variable n?
 
@@ -225,7 +312,8 @@ c. n is a Decimal
 d. In is an Int
 
 ```
-
+b. & c.
+variable n is a float and also a decimal.
 # Bonus 
 
 ***
@@ -233,12 +321,18 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+The main difference between doubles and integers is that doubles will display and five results with decimal places. Integers work fine for cases that involve only whole numbers but do not work ideal with math equations because integers would round a value lik 0.75 down to 0 which will result in a crash because 0 is not a divisible number.
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+
+the difference between Float and Double is the amount of disk space they will use when the function is applied. A Float operates as a 32-bit function while a Double literally doubles it's capability at 64-bit and will display more decimal places than a float would. 
+
+float e.g = 1.2345
+double e.g = 1.2345678
 
 ***
 
@@ -259,6 +353,8 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+d.) the code will not compile because totalWidth is a binary function and Double and Floats are different kinds of data types.
+
 ***
 ## Question 4 
 
@@ -285,6 +381,12 @@ Output:
 
 
 ```
+var a = 123
+
+var b = a % 10
+
+print(b)
+
 
 ***
 
@@ -303,6 +405,14 @@ Expected Output:
 Even
 
 ```
+var number = 5
+
+if number % 2 == 0{
+    print("even")
+}   else{
+    print("odd")
+}
+
 
 ***
 
@@ -315,7 +425,10 @@ var a = 2.0
 var b = 5.0
 
 ```
+var a:Double = 2.0
+var b:Double = 5.0
 
+var avg = (a + b) / 2
 
 ***
 
@@ -332,7 +445,17 @@ var midtermGrade = 4.0
 var projectGrade = 3.0
 
 ```
+var finalsGrade = 2.0
+var midtermGrade = 4.0
+var projectGrade = 3.0
 
+var weightedFinals = (finalsGrade / 100) * 50
+var weightedMidterm = (midtermGrade / 100) * 20
+var weightedProject = (projectGrade / 100) * 30
+
+var classGrade = weightedFinals + weightedMidterm + weightedProject
+
+print("The grade for the class is \(classGrade)")
 ***
 
 ## Question 8 
@@ -351,6 +474,13 @@ Output:
 4.2
 
 ```
+var mealCost:Double = 3.5
+var tip:Int = 20
+var tipTotal = (mealCost / 100) * Double(tip)
+
+var totalCost:Double = mealCost + tipTotal
+
+print("The total cost of the meal is \(totalCost)")
 ***
 
 ## Question 9
@@ -370,6 +500,19 @@ Output:
 "above average"
 
 ```
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var yourGrade = 8.0
+
+var classAvg = (grade1 + grade2 + grade3) / 3
+
+if yourGrade > classAvg{
+    print("above average 🥳")
+}   else{
+    print("below avg 👎🏽")
+}
 ***
 
 ## Question 10 
@@ -380,5 +523,22 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
+```
+```
+var numberOfFields = 5
+var whereYieldOf = 10.0
+
+var totalHarvest = Double(numberOfFields) * whereYieldOf
+
+var weatherWasGood = Int.random(in: 1...100)
+
+var goodWeather = (totalHarvest / 2) + totalHarvest
+
+
+if weatherWasGood % 2 == 0{
+    print("There was good weather, our total harvest is \(goodWeather)")
+}   else{
+    print("The weather was ordinary, our total harvest is \(totalHarvest)")
+}
 ```
 
