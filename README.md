@@ -22,6 +22,14 @@ var grade3 = 5.0
 
 // your code here
 ```
+var average = (grade1 + grade2 + grade3) / 3
+print(average)
+
+var myscore = 8
+if myscore > 7 {
+    print("above average")
+}
+
 
 ***
 ## Question 2
@@ -31,7 +39,14 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+// let number = 3
+if number % 2 == 0 {
+    print("even")
+}  else if number % 2 == 1 {
+    print("odd")
+}
+
+
 ```
 
 ***
@@ -45,6 +60,14 @@ var b = 3
 
 // code here
 ```
+var a = 3
+var b = 12
+if a % b == 0 {
+    print("divisible")
+}  else if a % b == 1 {
+    print("not divisible")
+}
+
 
 ***
 ## Question 4
@@ -70,6 +93,18 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+/* 
+
+var youCanCookBacon = baconAge <= 7
+var youCanCookEggs = eggsAge <= 21
+if eggsAge == 12 {
+print("you can eat eggs")
+}
+if baconAge == 6 {
+print("you can eat bacon")
+}
+
+*/
 
 ***
 ## Question 6
@@ -123,7 +158,7 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
-
+answer: A,B,D,E
 ***
 ## Question 10
 
@@ -143,8 +178,7 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
-
+answer: B, C
 ***
 ## Question 11
 
@@ -157,8 +191,7 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
-
+answer: A
 ***
 ## Question 12
 
@@ -171,7 +204,7 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+answer: A,B,C,D
 ***
 ## Question 13
 
@@ -192,7 +225,7 @@ b %= c
 print(a + b + c)
 
 ```
-
+answer: 30
 ***
 ## Question 14
 
@@ -209,6 +242,9 @@ let isEqual = div == div2
 
 
 ```
+1-  3
+2- Will not compile because one is an Int and the other is Double
+3-  isEqual will not compile
 ***
 ## Question 15
 ```swift
@@ -225,7 +261,7 @@ c. n is a Decimal
 d. In is an Int
 
 ```
-
+answer: B
 # Bonus 
 
 ***
