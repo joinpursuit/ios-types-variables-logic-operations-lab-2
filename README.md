@@ -20,7 +20,7 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// MY ANSWER BELOW
+// THE ANSWER IS
 
 var grade1 = 7.0
 var grade2 = 9.0
@@ -39,7 +39,7 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// MY ANSWER BELOW
+// THE ANSWER IS
 
 let number = 2
 print(number%2 == 0 ? "even" : "odd")
@@ -54,12 +54,12 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// MY ANSWER BELOW
+// THE ANSWER IS
 
 var a = 12
 var b = 3
-number = a / b
-print(number%2 == 0 ? "divisible" : "not divisible")
+var number = a % b
+print(number == 0 ? "divisible" : "not divisible")
 ```
 
 ***
@@ -76,13 +76,17 @@ var c = 2
 
 var a = 2
 var b = 3
-var c = 2
+var c = 3
 
 if a == b
 {
     print("At least two variables have the same value")
 }
 else if a == c
+{
+    print("At least two variables have the same value")
+}
+else if b == c
 {
     print("At least two variables have the same value")
 }
@@ -129,7 +133,23 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+// THE ANSWER IS
+
+let year = 2014
+
+switch year {
+case 2008:
+print("Leap year!")
+case 2012:
+    print("Leap year!")
+case 2016:
+    print("Leap year!")
+case 2020:
+    print("Leap year!")
+default:
+    print("Not a leap year!")
+}
+
 ```
 
 ***
@@ -140,7 +160,17 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+// THE ANSWER IS
+
+let randomNum = Int.random(in: 0...100)
+
+if randomNum % 2 == 0 {
+    print("heads")
+}
+else
+{
+    print("tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -156,7 +186,27 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// THE ANSWER IS 
+
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+var temp = a
+
+if temp > b
+{
+    temp = b
+}
+ if temp > c
+{
+    temp = c
+}
+ if temp > d
+{
+    temp = d
+}
+print(temp)
 ```
 
 ***
@@ -171,6 +221,9 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+// THE ANSWER IS 
+
+A, B, D and E
 ```
 
 ***
@@ -191,6 +244,10 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+// THE ANSWER IS 
+
+B and C
+
 ```
 
 
@@ -204,6 +261,10 @@ a. Integers must have a positive or negative sign always.
 b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
+
+// THE ANSWER IS 
+
+C
 
 ```
 
@@ -219,6 +280,10 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+// THE ANSWER IS 
+
+A, B, C and D (ALL OF THEM)
+
 ```
 
 ***
@@ -231,14 +296,19 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
+a += b a=25
+b -= c b=1
+b * (c + a) 
 (b * c) + a
 b %= a
 b %= c
 
 print(a + b + c)
+
+
+// THE ANSWER IS 
+
+error ... you did not use assignment operator when it got to b * (c + a)
 
 ```
 
@@ -255,6 +325,14 @@ let div2 = 11.0 / 4.0
 let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+
+// THE ANSWER IS 
+
+1. 2
+
+2. 2.75
+
+3. isEqual will not compile
 
 
 ```
@@ -273,6 +351,10 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+// THE ANSWER IS
+
+B 
+
 ```
 
 # Bonus 
@@ -282,13 +364,14 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
-
+double is a decimal number (example: 7.49848)
+Int is a whoie number (example: 500)
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
-
+float is a 32-bit precise decimal number where as a double has double the precision of a float and can hold more values after the decimal (example: float - 1.12345 vs double - 1.123456789)
 ***
 
 ## Question 3
@@ -307,6 +390,10 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+
+//THE ANSWER IS 
+
+D 
 ```
 ***
 ## Question 4 
@@ -332,6 +419,10 @@ var a = 337
 Output:
 7
 
+// THE ANSWER IS
+
+var input = 123
+var output = input % 10
 
 ```
 
@@ -351,6 +442,18 @@ var number = 6
 Expected Output: 
 Even
 
+
+// THE ANSWER IS
+
+var input = 5
+var output = input%2
+    if output == 0
+{
+    print("even")
+}
+    else {
+        print("odd")
+}
 ```
 
 ***
@@ -363,8 +466,14 @@ You are given 2 Doubles a and b. Print their average
 var a = 2.0
 var b = 5.0
 
-```
+// THE ANSWER IS
 
+var a = 2.0
+var b = 5.0
+var avg = (a+b) / 2
+
+print(avg)
+```
 
 ***
 
@@ -380,6 +489,14 @@ var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
 
+// THE ANSWER IS
+
+var finalsGrade = 2.0
+var midtermGrade = 4.0
+var projectGrade = 3.0
+
+var lastGrade = finalsGrade + midtermGrade + projectGrade
+print(lastGrade)
 ```
 
 ***
