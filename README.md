@@ -22,6 +22,17 @@ var grade3 = 5.0
 
 // your code here
 ```
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 10.0
+
+if yourGrade >  ((grade1 + grade2 + grade3 + yourGrade)/4) {
+    print("above average")
+    }  else if yourGrade < ((grade1 + grade2 + grade3 + yourGrade)/4) {
+    print("below average")
+
+    }
 
 ***
 ## Question 2
@@ -33,7 +44,13 @@ let number = 2
 
 // your code here
 ```
+let number = 2
 
+if number % 2 == 0 {
+    print("even!")
+    } else if number % 2 == 1 {
+    print("odd!")
+}
 ***
 ## Question 3
 
@@ -45,6 +62,20 @@ var b = 3
 
 // code here
 ```
+
+var a = 12
+var b = 3
+
+
+if a%b == 0 {
+    print("divisible")
+    } else {
+    print("not divisible")
+}
+---
+
+
+
 
 ***
 ## Question 4
@@ -59,6 +90,16 @@ var c = 2
 // your code here
 ```
 
+var a = 2
+var b = 3
+var c = 2
+
+if (a == b) || (a == c) || (b == c) {
+    print("At least two variables have the same value"
+    } else {
+        print("All the values are different")
+}
+
 ***
 ## Question 5
 
@@ -70,6 +111,15 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+var baconAge = 6 
+var eggsAge = 12
+
+if eggsAge<21 && baconAge<7{
+    print("you can cook bacon and eggs")
+    } else {
+        print("throw out bacon and eggs")
+        
+}
 
 ***
 ## Question 6
@@ -82,6 +132,20 @@ let year = 2014
 
 // your code here
 ```
+let year = 2014
+
+if year%4 == 0 {
+    if year%100==0 && year%400 != 0 {
+    print("Not a leap year!")
+} else if {
+        print("Leap year!")
+} else {
+        print("Not a leap year!")
+    }
+}
+
+
+  GO BACK TO THIS
 
 ***
 ## Question 7
@@ -96,6 +160,13 @@ let randomNum = Int.random(in: 0...100)
 
 Hint: use an if/else block along with the `%` operator
 
+let randomNum = Int.random(in: 0...100)
+
+if randomNum%2 == 0 {
+    print("heads")
+    } else {
+    print("tails")
+}
 ***
 ## Question 8
 
@@ -109,7 +180,26 @@ var d = 4
 
 // your code here
 ```
+var a = 5
+var b = 6
+var c = 3
+var d = 4
 
+var smallestNumber = a
+
+if b < smallestNumber {
+    smallestNumber = b
+}
+
+if c < smallestNumber {
+    smallestNumber = c
+}
+
+if d < smallestNumber {
+    smallestNumber = d
+}
+
+print(smallestNumber)
 ***
 ## Question 9
 
@@ -124,6 +214,11 @@ e. !(3 != 3)
 
 ```
 
+a. false
+b. true
+c. true
+d. true 
+e. true
 ***
 ## Question 10
 
@@ -143,8 +238,29 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
+a. 5 > 4 && 100 / 10 == 1
+    true && false
+    
+    false
 
+b. 5>4 || 100 / 10 == 1 || 6 ==1
+    true || false || false
+    
+    true
 
+c.  true
+
+d. (5>4 && 100/10 == 1) | | 6 > 6
+    (true && false) | | false
+    false | | false
+    
+    false
+    
+
+e. !(6<6) && !100/10 == 1 && ! 5 > 4
+    true && true && false
+    
+    false
 ***
 ## Question 11
 
@@ -157,6 +273,10 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
+a. false
+b. true
+c. true
+d. false
 
 
 ***
@@ -171,6 +291,7 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+all code snippets compile
 
 ***
 ## Question 13
@@ -192,6 +313,14 @@ b %= c
 print(a + b + c)
 
 ```
+20 += 5         25
+5 -= 4            1
+5 * (4 + 20)    120
+(20) + 20       40
+5 %= 20         ?
+
+29
+
 
 ***
 ## Question 14
@@ -203,12 +332,16 @@ let div = 11 / 4
 
 let div2 = 11.0 / 4.0
 2. The value of div2 is ________________________(or write "div2 will not compile")
-let isEqual = div == div2
 
+let isEqual = div == div2
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
 
 ```
+1. 2
+2. 2.75
+3. "isEqual will not compile"
+
 ***
 ## Question 15
 ```swift
@@ -225,6 +358,10 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+a. n is a float             FALSE
+b. n is a double        TRUE
+c. n is a decimal       TRUE
+d. In is an Int             In is not defined. N is not an Int, so FALSE
 
 # Bonus 
 
@@ -233,13 +370,14 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+an Int is a number without a decimal and a double is holds 64-bit
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
-
+Float holds 32-bit vs 64-bit of a double
 ***
 
 ## Question 3
@@ -259,6 +397,8 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+
+
 ***
 ## Question 4 
 
@@ -285,7 +425,8 @@ Output:
 
 
 ```
-
+var a = 123
+print(a % 10)
 ***
 
 ## Question 5 
@@ -304,6 +445,14 @@ Even
 
 ```
 
+var number = 6
+
+if number % 2 == 0 {
+    print("even!")
+    } else if number % 2 == 1 {
+    print("odd!")
+}
+
 ***
 
 ## Question 6
@@ -315,7 +464,10 @@ var a = 2.0
 var b = 5.0
 
 ```
+var a = 2.0
+var b = 5.0
 
+print((a+b)/2)
 
 ***
 
