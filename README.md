@@ -20,7 +20,21 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+```
+Answer
+```swift
+
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+
+var yourGrade: Double = 8.5
+
+var totalGrade = (grade1 + grade2 + grade3 + yourGrade)
+
+var averageGrade = totalGrade / 4
+
+print(yourGrade>averageGrade ? "Above Average" : "Below Average")
 ```
 
 ***
@@ -31,7 +45,18 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+```
+Answer 
+```swift
+let number = 3
+
+let even = (number%2)
+
+if even == 0 {
+    print("Even")
+} else {
+    print("Odd")
+}
 ```
 
 ***
@@ -43,7 +68,16 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+```
+Answer
+```swift
+var a = 12
+var b = 3
+
+if a%b == 0 {
+    print("Divisible")
+} else {
+    print("Not Divisible")
 ```
 
 ***
@@ -56,7 +90,14 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+```
+Answer
+```swift
+
+if aa == bb || aa==cc || bb==cc {
+    print("At least two variables have the same value")
+} else {
+    print("All the values are different")
 ```
 
 ***
@@ -68,7 +109,19 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+```
+Answer
+```swift
+
+if baconsAge < 7 && eggsAge < 21 {
+print("you can cook bacon and eggs!")
+}
+if baconsAge > 7 {
+    print("Time to throw out the bacon it is \(baconsAge) days old!")
+}
+if eggsAge > 21 {
+    print("Throw out the eggs, they are \(eggsAge) days old!")
+}
 ```
 
 ***
@@ -80,7 +133,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+```
+Answer
+```swift
+let leap4 = year % 4
+let leap100 = year % 100
+let leap400 = year % 400
+
+if leap100 == 0 || leap400 == 0 || leap4 != 0 {
+    print("It is not a leap year.")
+} else {
+    print("It is a leap year!")
+}
 ```
 
 ***
@@ -91,7 +155,30 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+```
+Answer
+```swift
+let randomNum = Int.random(in: 0...100)
+//let randomNum = 0
+
+switch randomNum {
+case 1..<50:
+    print("Heads!")
+case 51...100:
+    print("Tails!")
+default:
+    print("Did this coin just land on its side?")
+}
+
+// I had a little fun with this one, since 0...100 is 101 digits. Maybe this was the goal to learn how to apply the default? I commented out my test run to ensure 0 resulted in the default statement.
+
+if randomNum % 2 == 0 {
+    print("Heads!")
+} else {
+    print("Tails!")
+}
+
+//After writing the swtich statement, I saw the hint and wrote the code to apply it. I see how much simpler this is. 
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,9 +194,24 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
 ```
+Answer
+```swift
+var c = 530495
+var d = 11938
+var e = 312359765
+var f = 2235754
 
+if c < d && c < e && c < f {
+    print(c)
+} else if d < e && d < f {
+    print(d)
+} else if e < f {
+    print(e)
+} else {
+    print(f)
+}
+```
 ***
 ## Question 9
 
@@ -123,6 +225,12 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+Answer
+
+a.
+b.
+d.
+e.
 
 ***
 ## Question 10
@@ -143,7 +251,9 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+Answer
+b.
+c.
 
 ***
 ## Question 11
@@ -157,6 +267,12 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
+Answer
+
+a. False - Positive Ints don't require positive signs
+b. False - Int have a range of -2,147,483,648 and 2,147,483,647
+c. True - this is determined by bit depth of the Int (IE: 32 vs 64)
+d. False - Floats and Doubles can contain decimals
 
 
 ***
@@ -171,6 +287,12 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+Answer
+
+a.
+b.
+c.
+d.
 
 ***
 ## Question 13
@@ -192,6 +314,10 @@ b %= c
 print(a + b + c)
 
 ```
+Answer 
+```swift
+30
+```
 
 ***
 ## Question 14
@@ -209,6 +335,12 @@ let isEqual = div == div2
 
 
 ```
+Answer 
+```
+1. The value of div is 2
+2. The value of div2 is 2.75
+3. isEqual will not compile because you cannot mix data types (Int and Double)
+```
 ***
 ## Question 15
 ```swift
@@ -225,6 +357,12 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+Answer
+```
+b.
+
+Note: Possible typo for option "d."? 
+```
 
 # Bonus 
 
@@ -233,15 +371,19 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+Doubles will contain a decimal point up to 64bits of value. 
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
-
-
+```
+```
+Answer
+```
+-Floats are 32bits and double are 64bits, resulting in how data can be stored
+```
 ***
-
 ## Question 3
 
 What will happen when the code below is run?
@@ -258,6 +400,10 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+```
+Answer
+```
+d. It will give a compile-time error (Can't mix data types(Float + Double)
 ```
 ***
 ## Question 4 
@@ -284,6 +430,14 @@ Output:
 7
 
 
+```
+Answer
+```swift
+var a = 123
+print(a % 120)
+
+var a = 337
+print(a % 30)
 ```
 
 ***
@@ -381,4 +535,5 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
 ```
+
 
