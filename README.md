@@ -20,7 +20,19 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+// Answer:
+
+var yourGrade = 8.5
+
+var average = (grade1 + grade2 + grade3 + yourGrade)/4
+print("\(average) is the average grade for the class")
+
+if yourGrade > average {
+    print("above average")
+}
+else if yourGrade < average {
+    print("below average")
+}
 ```
 
 ***
@@ -31,7 +43,13 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+// Answer:
+
+if number%2 == 0 {
+    print("\(number) is an even number")
+} else {
+    print("\(number) is an odd number ")
+}
 ```
 
 ***
@@ -43,7 +61,12 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+// Answer: 
+if a % b == 0 {
+    print ("\(a) is divisible by \(b)")
+} else {
+    print ("\(a) is not divisible by \(b)")
+}
 ```
 
 ***
@@ -56,7 +79,18 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+// Answer:
+
+var a = 2
+var b = 3
+var c = 2
+
+if a==b || b==c || c==a {
+    print ("At least two variables have the same value")
+} else {
+    print ("All the values are different")
+}
+
 ```
 
 ***
@@ -68,7 +102,18 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+// Answer:
+var spoiledEgg = 21 // eggs spoil in 21 days
+var spoiledBacon = 7 // bacon spoils in 7 days
+
+if eggsAge < spoiledEgg && baconAge < spoiledBacon {
+    print("you can cook bacon and eggs")
+} else if eggsAge > spoiledEgg {
+    print("throw out eggs")
+} else if baconAge > spoiledBacon {
+    print ("throw out bacon")
+}
+
 ```
 
 ***
@@ -80,7 +125,16 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+// Answer: 
+if year % 4 == 0 {
+    if (year % 100 == 0) && !(year % 400 == 0) {
+        print("Not Leap year!")
+    } else {
+        print("Leap year")
+    }
+} else {
+    print("Not Leap year!")
+}
 ```
 
 ***
@@ -91,7 +145,12 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+// Answer:
+if randomNum % 2 == 1 {
+    print("Heads")
+} else {
+    print("Tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +166,29 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// Answer:
+var smallestNum: Int
+
+if a < b {
+    smallestNum = a //
+} else {
+    smallestNum = b
+}
+
+//if b < smallestNum {
+//    smallestNum = b //
+//}
+
+if c < smallestNum {
+    smallestNum = c //
+}
+
+if d < smallestNum {
+    smallestNum = d //
+}
+
+ print(smallestNum)
+
 ```
 
 ***
@@ -122,7 +203,10 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+
+// Answer: A, B, D, E 
 ```
+
 
 ***
 ## Question 10
@@ -142,6 +226,7 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+// Answer: C
 ```
 
 
@@ -155,6 +240,8 @@ a. Integers must have a positive or negative sign always.
 b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
+
+// Answer: C 
 
 ```
 
@@ -170,6 +257,7 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+// Answer: All of the above. 
 ```
 
 ***
@@ -182,14 +270,14 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
-(b * c) + a
-b %= a
-b %= c
+a += b   // a = 25
+b -= c   // b = 1
+b * (c + a) // = 29 
+(b * c) + // a = 29 
+b %= a // b = 1
+b %= c // b = 1
 
-print(a + b + c)
+print(a + b + c) // = 30 
 
 ```
 
@@ -199,13 +287,13 @@ print(a + b + c)
 let div = 11 / 4
 
 ```swift
-1. The value of div is ____________________(or write "div1 will not compile")
+1. The value of div is ___2_______________(or write "div1 will not compile")
 
 let div2 = 11.0 / 4.0
-2. The value of div2 is ________________________(or write "div2 will not compile")
+2. The value of div2 is __________[2.5]__________(or write "div2 will not compile")
 let isEqual = div == div2
 
-3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+3. The value of isEqual is______False_______________ (or write "isEqual will not compile")
 
 
 ```
@@ -224,6 +312,7 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+// Answer: B 
 ```
 
 # Bonus 
