@@ -31,8 +31,7 @@ if yourGrade >  ((grade1 + grade2 + grade3 + yourGrade)/4) {
     print("above average")
     }  else if yourGrade < ((grade1 + grade2 + grade3 + yourGrade)/4) {
     print("below average")
-
-    }
+}
 
 ***
 ## Question 2
@@ -145,7 +144,7 @@ if year%4 == 0 {
 }
 
 
-  GO BACK TO THIS
+
 
 ***
 ## Question 7
