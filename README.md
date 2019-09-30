@@ -112,15 +112,19 @@ var eggsAge = 12 // eggs are 12 days old
 ```
 
 ```
-var baconAge = 6 // the bacon is 6 days old
-var eggsAge = 12 // eggs are 12 days old
-if baconAge >= 7 {
-    print("Bacon is bad")
-} else if eggsAge >= 21{
-    print("eggs are bad")
+var baconAge = 50// the bacon is 6 days old
+var eggsAge = 40 // eggs are 12 days old
+if baconAge <= 7 && eggsAge <= 21 {
+    print("eat bacon and eggs")
 } else {
-    print("time for bacon and eggs")
+    if baconAge > 7 {
+        print( "bacon is bad")
+    }
+    if eggsAge > 21 {
+        print("eggs are bad")
+    }
 }
+
 ```
 
 ***
@@ -132,7 +136,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+
+var year = 2015
+if year % 4 == 0{
+    if year % 100 == 0 && year % 400 != 0{
+        print( "\(year) is NOT a leap year")
+    } else {
+    print("Is a leap year")
+    }
+} else {
+        print( "\(year) is NOT a leap year")
+    }
+
 ```
 
 ***
@@ -270,6 +285,10 @@ print(a + b + c)
 
 ```
 
+```
+30
+````
+
 ***
 ## Question 14
 
@@ -283,9 +302,13 @@ let div2 = 11.0 / 4.0
 let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
-
-
 ```
+
+````
+1. 2
+2. 2.75
+3. will not compile
+````
 ***
 ## Question 15
 ```swift
@@ -300,8 +323,11 @@ a. n is a Float
 b. n is a Double
 c. n is a Decimal
 d. In is an Int
-
 ```
+```
+a , b
+```
+
 
 # Bonus 
 
