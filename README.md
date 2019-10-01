@@ -20,7 +20,19 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+// Answer:
+
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade: Double = 6.0
+var averageGrade =  (grade1 + grade2 + grade3 + yourGrade) / 4
+
+if yourGrade >= averageGrade {
+print("above average")
+} else if yourGrade < averageGrade {
+print("below average")
+}
 ```
 
 ***
@@ -31,7 +43,15 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+Answer:
+
+let number = 2
+
+if number % 2 == 0 {
+print("even")
+} else {
+print("odd")
+}
 ```
 
 ***
@@ -43,7 +63,16 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+Answer:
+
+var a = 12
+var b = 3
+
+if a % b == 0 {
+print("divisible")
+} else {
+print("not divisible")
+}
 ```
 
 ***
@@ -56,7 +85,16 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+Answer:
+
+var a = 2
+var b = 3
+var c = 2
+if a == b || b == c || a == c {
+print("at least two variables are the same")
+} else {
+print("all values are different")
+}
 ```
 
 ***
@@ -68,8 +106,19 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
-```
+Answer:
+var baconAge = 6
+var eggsAge = 12
+
+if baconAge <= 7 && eggsAge <= 21{
+print("cook bacon and eggs")
+} else if baconAge <= 7 && eggsAge > 21 {
+print("throwout eggs")
+} else if baconAge > 7 && eggsAge <= 21 {
+print("throwout bacon")
+} else if baconAge > 7 && eggsAge > 21 {
+print("throwout bacon and eggs")
+}
 
 ***
 ## Question 6
@@ -80,7 +129,23 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
+Answer:
+
+
+let year = 2014
+
 // your code here
+let year = 2014
+
+if year % 400 == 0 {
+print("leap year")
+} else if year % 100 == 0 {
+print("not a leap year")
+} else if year % 4 == 0 {
+print("leap year")
+} else{
+print("not a leap year")
+}
 ```
 
 ***
@@ -91,7 +156,24 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
+Answer:
+
+let randomNum = Int.random(in: 0...100)
+
+let year = 2014
+
 // your code here
+let year = 2014
+
+if year % 400 == 0 {
+print("leap year")
+} else if year % 100 == 0 {
+print("not a leap year")
+} else if year % 4 == 0 {
+print("leap year")
+} else{
+print("not a leap year")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +189,33 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// Answer:
+Answer:
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+let smallestOne = min(a,b,c,d)
+print("smallestOne")
+
+or
+
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+if a < b && a < c && a < d {
+print(a)
+} else if  b < a && b < c && b < d {
+print(b)
+} else if c < a && c < b && c < d {
+print(c)
+} else if d < a && d < b && d < c {
+print(d)}
+
+
 ```
 
 ***
