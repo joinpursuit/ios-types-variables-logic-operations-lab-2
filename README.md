@@ -20,7 +20,17 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+// 
+var yourGrade = 6.0
+
+var classAverage = (grade1 + grade2 + grade3 + yourGrade) / 4
+
+if yourGrade > classAverage {
+    print ("above average")
+}
+if yourGrade < classAverage {
+    print ("below average")
+}
 ```
 
 ***
@@ -31,7 +41,13 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+// 
+if (number % 2) == 0 {
+    print ("even")
+}
+if (number % 2) == 1 {
+    print ("odd")
+}
 ```
 
 ***
@@ -43,7 +59,13 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+// 
+if (a % b) == 0 {
+    print ("divisible")
+}
+else {
+print ("not divisible")
+}
 ```
 
 ***
@@ -56,7 +78,14 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+// 
+if (a == b) || (a == c || (b == c)) {
+    print ("At least two variables have the same value")
+    
+}
+else {
+print ("All the values are different")
+}
 ```
 
 ***
@@ -68,7 +97,17 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+// 
+if (21 - eggsAge) >= 0 && (7 - baconAge) >= 0 {
+    print ("you can cook bacon and eggs")
+}
+
+if (21 - eggsAge) <= 0 {
+print ("throw out eggs")
+}
+if (7 - baconAge) <= 0 {
+print ("throw out bacon")
+}
 ```
 
 ***
@@ -80,7 +119,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+// 
+let year = 2014
+
+if ((year % 100) == 1) && ((year % 400) == 0) {
+    print ("Not a leap year!")
+}
+else { if ((year % 4) == 0) {
+        print ("Leap year!")
+} else {
+    print ("Not a leap year!")
+}
+}
 ```
 
 ***
@@ -91,7 +141,14 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+// 
+let randomNum = Int.random(in: 0...100)
+
+if (randomNum % 2) == 0 {
+    print ("heads")
+} else {
+    print ("tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +164,27 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// 
+var lowerAtoB = 0
+var lowerCtoD = 0
+
+if (a <= b ) {
+    lowerAtoB = lowerAtoB + a
+} else {
+    lowerAtoB = lowerAtoB + b
+}
+ 
+if (c <= d ) {
+    lowerCtoD = lowerCtoD + c
+} else {
+    lowerCtoD = lowerCtoD + d
+}
+
+if (lowerAtoB <= lowerCtoD) {
+    print (lowerAtoB)
+} else {
+    print (lowerCtoD)
+}
 ```
 
 ***
@@ -123,7 +200,11 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
-
+a. 3 == 2 || 9 == 9 // evaluates to false
+b. !( 3 > 3) //does not compile, would evaluate false
+c. !(true || false) //evaluates to true
+d. (4 < 3 || 4 > 3) && ("Message: " = "Message: ") // evaluates to false
+e. !(3 != 3) // evaluates to true
 ***
 ## Question 10
 
@@ -143,7 +224,11 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+a. x && y // evaluates to false
+b. x || y || z == 1 //evaluates to false
+c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y // evaluates to true
+d. (x && y) || z > 6 //evaluates to false
+e. !(z < 6) && !y && !x // evaluates to false
 
 ***
 ## Question 11
@@ -157,7 +242,10 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+a. Integers must have a positive or negative sign always. //false
+b. The maximum value for Integers is +∞. //false
+c. Integer types in computers take up a fixed amount of memory. // true
+d. Integers may contain decimals. //false
 
 ***
 ## Question 12
@@ -171,7 +259,10 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+a. let numberOfPages: Int = 500 //will complile
+b. let numberOfChapters = "For Whom The Bell Tolls" //will compile, although the number of chapters would be an integer, not a strings
+c. let nameOfBook: Int = 14 //will compile, alsothought the name of a book would be a string, not an integer
+d. let yearPublished = "Nineteen-thirty-five" //will compile, although a year would more commonly be written as an integer
 ***
 ## Question 13
 
@@ -192,6 +283,20 @@ b %= c
 print(a + b + c)
 
 ```
+a += b = 20 + 5
+a = 25
+b -= c = 5 - 4
+b = 1
+b * (c + a) = 1 * (4 + 25)
+//29
+(b * c) + a = (1 * 4) + 25
+//29
+b %= a
+//1
+b %= c
+//1
+
+print(a + b + c) = 25 + 1 + 4 // 30
 
 ***
 ## Question 14
@@ -209,6 +314,14 @@ let isEqual = div == div2
 
 
 ```
+let div = 11 / 4
+1. The value of div is "div 1 does not compile" (or write "div1 will not compile")
+
+let div2 = 11.0 / 4.0
+2. The value of div2 is 2.75 (or write "div2 will not compile")
+let isEqual = div == div2
+
+3. The value of isEqual is "isEqual does not compile" (or write "isEqual will not compile")
 ***
 ## Question 15
 ```swift
@@ -225,6 +338,12 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+var n: Double = 7.5
+
+a. n is a Float // true
+b. n is a Double // false
+c. n is a Decimal // true, but this is not a variable type
+d. n is an Int // false
 
 # Bonus 
 
