@@ -90,6 +90,12 @@ let year = 2014
 
 // your code here
 ```
+let year = 2014
+
+if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+    print("leap year ")
+}else{
+    print(" not a leap year ")
 
 ***
 ## Question 7
@@ -101,6 +107,7 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
+
 
 Hint: use an if/else block along with the `%` operator
 
@@ -217,6 +224,9 @@ let isEqual = div == div2
 
 
 ```
+1 . 2
+2. 2.75 
+3 . it will not complie this is because one is an int the other is a double 
 ***
 ## Question 15
 ```swift
@@ -267,6 +277,7 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+complie error you cant add double and a float 
 ***
 ## Question 4 
 
@@ -323,8 +334,11 @@ var a = 2.0
 var b = 5.0
 
 ```
+var a = 2.0
+var b = 5.0
 
-
+let average = a+b
+print (average)
 ***
 
 ## Question 7 
@@ -340,6 +354,12 @@ var midtermGrade = 4.0
 var projectGrade = 3.0
 
 ```
+var finalsGrade = 2.0 // 50%
+var midtermGrade = 4.0// 20%
+var projectGrade = 3.0// 30%
+
+let halfOfaverage = midtermGrade + projectGrade
+var fullAverage = (halfOfaverage + finalsGrade) / 2
 
 ***
 
