@@ -20,9 +20,22 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
-```
+*ANSWER
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var yourGrade = 8.7
 
+var avg = (grade1 + grade2 + grade3 + yourGrade) / 4
+
+if yourGrade > avg {
+    print("above average")
+} else {
+    print("below average")
+}
+
+*/
+```
 ***
 ## Question 2
 
@@ -32,7 +45,18 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+/*ANSWER
+let number = 8
+
+if number % 2 == 0 {
+print("This number is even")
+} else if number % 3 == 1 {
+print("This number is odd")
+}
+*/
 ```
+
+
 
 ***
 ## Question 3
@@ -44,7 +68,19 @@ var a = 12
 var b = 3
 
 // code here
+/*ANSWER
+var a = 12
+var b = 3
+
+if a % b == 0 {
+print("\(a) is divisible by \(b)")
+} else {
+print("\(a) is not divisble by \(b)")
+}
+
+*/
 ```
+
 
 ***
 ## Question 4
@@ -57,7 +93,16 @@ var b = 3
 var c = 2
 
 // your code here
+
+/*ANSWER
+var a = 2
+var b = 3
+var c = 2
+
+print( a == b || b == c || c == a ? "At least two variables have the same value" : "All the values are different")
+*/
 ```
+
 
 ***
 ## Question 5
@@ -69,6 +114,17 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+var baconAge =  6
+var eggAge = 60
+
+if baconAge<7 && eggAge<21 {
+    print("you can cook bacon and eggs")
+} else if (baconAge>7 ) {
+    print("throw away bacon")
+} else if (eggAge>21) {
+    print("throw away eggs")
+}
+
 ```
 
 ***
@@ -81,6 +137,11 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+
+let year = 2016
+
+print(year % 4 == 0 || year % 100 == 0 && year % 400 == 0 ? "Leap Year!" : "Not a leap year")
+
 ```
 
 ***
@@ -92,6 +153,10 @@ If you use `random()` it will give you a random number within a specified range.
 let randomNum = Int.random(in: 0...100)
 
 // your code here
+let randomNum = Int.random(in: 0...1)
+
+print(randomNum == 0 ? "Heads" : "Tails")
+
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -109,6 +174,15 @@ var d = 4
 
 // your code here
 ```
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+print( a<b && a<c && a<d ? (a) : "" )
+print( b<a && b<c && b<d ? (b) : "" )
+print( c<a && c<b && c<d ? (c) : "" )
+print( d<a && d<b && d<c ? (d) : "" )
 
 ***
 ## Question 9
@@ -123,6 +197,12 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+/*ANSWER
+a. true
+b. true
+d. true
+e. true
+*/
 
 ***
 ## Question 10
@@ -143,7 +223,10 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
-
+/*ANSWER
+b. true
+c. true
+*/
 
 ***
 ## Question 11
@@ -157,7 +240,9 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+/*
+None are true.
+*/
 
 ***
 ## Question 12
@@ -171,7 +256,9 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+/*
+All of them compile.
+*/
 ***
 ## Question 13
 
@@ -192,7 +279,16 @@ b %= c
 print(a + b + c)
 
 ```
+/*ANSWER
+a += b => 25
+b -= c => 1
+b * (c + a) => 29
+(b * c) + a => 29
+b %= a => 1
+b %= c => 1
 
+print(a + b + c) = 30
+*/
 ***
 ## Question 14
 
@@ -209,6 +305,12 @@ let isEqual = div == div2
 
 
 ```
+/*ANSWER
+1. The value of div is 2
+2. The value of div us 2.75
+3. The value of isEqual will not compile (cannot compare int and double)
+*/
+
 ***
 ## Question 15
 ```swift
@@ -225,6 +327,9 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+/*ANSWER
+b. true
+*/
 
 # Bonus 
 
