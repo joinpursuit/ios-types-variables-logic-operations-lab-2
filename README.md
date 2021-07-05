@@ -22,7 +22,18 @@ var grade3 = 5.0
 
 // your code here
 ```
+My code:
+```swift
+var yourGrade:Double = 10.0
+var sum = grade1 + grade2 + grade3
+var average = sum / 3.0
 
+if (yourGrade > average){
+    print("above average")
+    } else if (yourGrade < average) {
+    print("below average")
+}
+```
 ***
 ## Question 2
 
@@ -32,6 +43,15 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+```
+My code:
+```swift
+
+if (number % 2 == 0){
+    print("/(number) is even")
+} else if (number % 2 == 1){
+    print("/(number) is odd")
+}
 ```
 
 ***
@@ -44,6 +64,14 @@ var a = 12
 var b = 3
 
 // code here
+```
+My code:
+```swift
+if(a%b == 0){
+    print("divisible")
+} else {
+    print("not divisible")
+}
 ```
 
 ***
@@ -58,6 +86,14 @@ var c = 2
 
 // your code here
 ```
+My code:
+```swift
+if(a == b && b == c && c == a){
+    print("At least two variables have the same value")
+} else {
+    print("All values are different")
+}
+```
 
 ***
 ## Question 5
@@ -70,6 +106,18 @@ var eggsAge = 12 // eggs are 12 days old
 
 // your code here
 ```
+My code:
+```swift
+if(baconAge < 21 && eggsAge < 7){
+    print("you can cook bacon and eggs")
+} else if (baconAge > 21 && eggsAge < 7) {
+    print("throw out bacon")
+} else if (eggsAge > 7 && baconAge < 21){
+    print("throw out eggs")
+} else if (baconAge > 21 && eggsAge > 7){
+    print("throw out both bacon and eggs")
+}
+```
 
 ***
 ## Question 6
@@ -81,6 +129,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 let year = 2014
 
 // your code here
+```
+M code:
+```swift
+if(year%4 == 0){
+    if(year%400 == 0 && year%100 == 0) {
+        print("Leap year!")
+    }
+    print("Leap year!")
+} else {
+    print("Not a leap year!")
+}
+    
 ```
 
 ***
@@ -96,6 +156,15 @@ let randomNum = Int.random(in: 0...100)
 
 Hint: use an if/else block along with the `%` operator
 
+My code:
+```swift
+let randomNum = Int.random(in: 0...100)
+if (randomNum % 2 == 0){
+    print("Heads")
+} else {
+    print("Tails")
+}
+```
 ***
 ## Question 8
 
@@ -109,7 +178,38 @@ var d = 4
 
 // your code here
 ```
+My code:
+```swift
+var a = 5
+var b = 6
+var c = 3
+var d = 4
 
+var min1 = 0
+var min2 = 0
+var min = 0
+
+if (a > b){
+    min1 = b
+}
+else {
+    min1 = a
+}
+
+if(c > d){
+    min2 = d
+} else {
+    min2 = c
+}
+
+if(min1>min2){
+    min = min2
+    print(min)
+} else {
+    min = min1
+    print(min)
+}
+```
 ***
 ## Question 9
 
@@ -121,8 +221,8 @@ b. !(3 > 3)
 c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
-
 ```
+Choices a, b, d, and e
 
 ***
 ## Question 10
@@ -130,8 +230,8 @@ e. !(3 != 3)
 Given the below, which of the following expressions evaluate to true?
 
 ```swift
- let x = 5 > 4
- let y = 100 / 10 == 1
+ let x = 5 > 4 (true)
+ let y = 100 / 10 == 1 (false)
  let z = 6
 ```
 
@@ -141,9 +241,8 @@ b. x || y || z == 1
 c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
-
 ```
-
+Choices b and c
 
 ***
 ## Question 11
@@ -157,7 +256,7 @@ c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
 ```
-
+Choice a, c
 
 ***
 ## Question 12
@@ -171,7 +270,7 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
-
+Choice a, b, c, and d
 ***
 ## Question 13
 
@@ -183,7 +282,7 @@ var b = 5
 var c = 4
 
 a += b
-b -= c
+b -= c 
 b * (c + a)
 (b * c) + a
 b %= a
@@ -192,6 +291,7 @@ b %= c
 print(a + b + c)
 
 ```
+It will print the string "30"
 
 ***
 ## Question 14
@@ -207,8 +307,11 @@ let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
 
-
 ```
+1 - The value of div is 2 <br/>
+2 - The value of div2 is 2.75 <br/>
+3 - The value of isEqual is isEqual will not complile
+
 ***
 ## Question 15
 ```swift
@@ -225,6 +328,7 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+Choice b
 
 # Bonus 
 
@@ -233,12 +337,14 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
+The difference between Double and Int in the numbers they can represent is that Int data types only display whole numbers +- infinity, whereas Double data types can display decimal point numbers between whole numbers, increasing the capacity to display a range of numbers from an infinitely small decimal number (0.00000001, with 0 continuous) or a infinitely large decimal number (0.99999999, with 9 being continous)
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
+They key difference between a Float and Double is that a Float has a precision space limited to no more than 32 bits, whereas Double has a precision space limited to no more than 64 bits
 
 ***
 
@@ -259,6 +365,8 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+Choice d
+
 ***
 ## Question 4 
 
@@ -285,6 +393,11 @@ Output:
 
 
 ```
+Under lines 379 and 386 include the following code below:
+```swift
+var lastDigit = a%10
+print(lastDigit)
+```
 
 ***
 
@@ -303,7 +416,14 @@ Expected Output:
 Even
 
 ```
-
+Under line 410, include the following code:
+```swift
+if (number % 2 = 0){
+    print("even")
+    } else {
+    print("odd")
+}
+```
 ***
 
 ## Question 6
@@ -315,7 +435,12 @@ var a = 2.0
 var b = 5.0
 
 ```
-
+Under line 432, include the following code:
+```swift
+var sum = a + b
+var average = sum /2.0
+print(average)
+```
 
 ***
 
@@ -331,6 +456,12 @@ var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
 
+```
+Include the following code under line 454:
+```swift
+var weightedSum = (finalsGrade*0.5) + (midtermGrade*0.2) + (projectGrade*0.3)
+var weightedAvg = weightedSum / 3.0
+print(weightedAvg)
 ```
 
 ***
@@ -349,8 +480,15 @@ var tip:Int = 20
 
 Output:
 4.2
-
 ```
+Include the following code under line 475:
+```swift
+var tipPer = Double(tip)/100.0
+var costOfTip = mealCost * (tipPer)
+var costOfMealwTip = mealCost + costOfTip
+print(costOfMealwTip)
+```
+
 ***
 
 ## Question 9
@@ -370,6 +508,18 @@ Output:
 "above average"
 
 ```
+```swift
+var sum = grade1 + grade2 + grade3
+var average = sum / 3.0
+
+if (yourGrade > average){
+    print("above average")
+    } else if (yourGrade < average) {
+    print("below average")
+}
+```
+
+
 ***
 
 ## Question 10 
@@ -380,5 +530,16 @@ A farmer is harvesting wheat from a number of wheat fields, given in a variable 
 
 <img width="270" alt="Screen Shot 2019-09-12 at 1 50 33 PM" src="https://user-images.githubusercontent.com/43886240/64808175-c03a4180-d564-11e9-8502-4fcade888dc1.png">
 
+```swift
+var numberOfFields:Int
+var wheatYieldof:Double
+var totalHarvestTemp = Double(numberOfFields) * wheatYieldof
+
+if (var weatherWasGood:Bool == true){
+    var totalHarvestTemp *= 1.5 
+    print(totalHarvestTemp)
+} else {
+    print(totalHarvestTemp)
+}
 ```
 
