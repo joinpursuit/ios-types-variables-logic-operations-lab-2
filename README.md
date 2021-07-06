@@ -20,9 +20,15 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+var yourGrade: Double = 0 
+let classAverage = (grade1 + grade2 + grade3 + yourGrade) / 4 
+if yourGrade > classAverage {
+   print("above average")
+   } else {
+   print("below average")
+}
+   
 ```
-
 ***
 ## Question 2
 
@@ -31,7 +37,7 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+print(number % 2 == 0 ? "Even" : "Odd")
 ```
 
 ***
@@ -43,7 +49,8 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+print(a % b == 0 ? "divisible" : "not divisible")
+
 ```
 
 ***
@@ -56,7 +63,11 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+if a == b || b == c || a == c {
+print("At least two variables are the same value")
+} else {
+print("All values are different")
+}
 ```
 
 ***
@@ -68,7 +79,15 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+if baconAge <= 7 && eggsAge <= 21{
+print("you can cook bacon and eggs")
+} else if baconAge <= 7 && eggsAge > 21 {
+print("throw out eggs")
+} else if baconAge > 7 && eggsAge <= 21 {
+print("throw out bacon")
+} else if baconAge > 7 && eggsAge > 21 {
+print("throw out bacon and eggs")
+}
 ```
 
 ***
@@ -79,8 +98,16 @@ The above rule is valid except that every 100 years special rules apply. Years t
 
 ```swift
 let year = 2014
+if year % 4 == 0 {
+    if year % 100 != 0 && year % 400 == 0 {
+        print("Not a leap year!")
+    } else {
+        print("Leap year!")
+    }
+} else {
+    print("Not a leap year!")
+}
 
-// your code here
 ```
 
 ***
@@ -91,7 +118,11 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+if randomNum % 2 == 0 {
+    print("heads")
+} else {
+    print("tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +138,7 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+print(c)
 ```
 
 ***
@@ -122,6 +153,7 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+a,b,d,e
 ```
 
 ***
@@ -142,6 +174,8 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+a,b 
+
 ```
 
 
@@ -156,6 +190,8 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+a,c,
+
 ```
 
 
@@ -169,6 +205,8 @@ a. let numberOfPages: Int = 500
 b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
+
+a,b,c,d
 
 ```
 
@@ -191,6 +229,8 @@ b %= c
 
 print(a + b + c)
 
+25 + 1 + 4 
+30
 ```
 
 ***
@@ -206,6 +246,10 @@ let div2 = 11.0 / 4.0
 let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
+
+the value of div is 2
+the value of div2 is 2.75
+IsEqual will not compile 
 
 
 ```
@@ -224,6 +268,8 @@ b. n is a Double
 c. n is a Decimal
 d. In is an Int
 
+a,b,c,
+
 ```
 
 # Bonus 
@@ -232,13 +278,16 @@ d. In is an Int
 ## Question 1
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
-
+double are can be represented as decimals  var number = 32.123
+Int are presented as  whole numbers  var numberTwo = 34
 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
-
+float holds 32 bit 
+double holds 64 bit 
+doubles can hold more decimals points than float 
 
 ***
 
@@ -258,6 +307,7 @@ b. It will print 50.0
 c. It will print 50
 d. It will give a compile-time error
 
+d
 ```
 ***
 ## Question 4 
@@ -283,7 +333,7 @@ var a = 337
 Output:
 7
 
-
+print(a % 10)
 ```
 
 ***
@@ -302,6 +352,11 @@ var number = 6
 Expected Output: 
 Even
 
+if number % 2 == 0 {
+print("even")
+} else {
+print("Odd")
+}
 ```
 
 ***
@@ -314,6 +369,8 @@ You are given 2 Doubles a and b. Print their average
 var a = 2.0
 var b = 5.0
 
+let avg = (a + b) / 2 
+print(avg) 
 ```
 
 
@@ -330,6 +387,9 @@ You are given 3 grades stored in 3 variables of type Double finalsGrade, midterm
 var finalsGrade = 2.0
 var midtermGrade = 4.0
 var projectGrade = 3.0
+
+let finalGrade = ((0.50 * finalsGrade) + (0.20 * midtermGrade) + (0.30 * projectGrade)) 
+print(finalGrade)
 
 ```
 
@@ -350,6 +410,9 @@ var tip:Int = 20
 Output:
 4.2
 
+let tipInDouble = mealCost * Double(tip) / 100.0
+let totalCost = mealCost + tipInDouble
+print(totalCost)
 ```
 ***
 
@@ -369,6 +432,13 @@ var yourGrade = 8.0
 Output:
 "above average"
 
+let classAverage = (grade1 + grade2 + grade3 + yourGrade) / 4 
+
+if yourGrade > classAverage {
+print("above avergae")
+} else {
+print("below average")
+}
 ```
 ***
 
