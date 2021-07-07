@@ -22,6 +22,19 @@ var grade3 = 5.0
 
 // your code here
 ```
+```
+var grade1 = 7.0
+var grade2 = 9.0
+var grade3 = 5.0
+var myGrade = 8.0
+var average = (grade1 + grade2 + grade3 + myGrade)/4
+
+if myGrade >= average {
+    print("My Grade is above average")
+} else {
+    print("My Grade is below average")
+}
+```
 
 ***
 ## Question 2
@@ -33,7 +46,14 @@ let number = 2
 
 // your code here
 ```
-
+```
+let number = 2
+if number % 2 == 0 {
+    print("This number is even")
+} else {
+    print("this number is odd")
+}
+```
 ***
 ## Question 3
 
@@ -44,6 +64,15 @@ var a = 12
 var b = 3
 
 // code here
+```
+```
+var a = 12
+var b = 3
+if a % b == 0 {
+    print("Divisible")
+} else {
+    print("Not Divisible")
+}
 ```
 
 ***
@@ -58,6 +87,17 @@ var c = 2
 
 // your code here
 ```
+```
+
+var a = 2
+var b = 3
+var c = 2
+if a == b || b == c || a == c {
+    print("At least two variables have the same value")
+} else {
+    print("All the values are different")
+}
+```
 
 ***
 ## Question 5
@@ -71,6 +111,22 @@ var eggsAge = 12 // eggs are 12 days old
 // your code here
 ```
 
+```
+var baconAge = 50// the bacon is 6 days old
+var eggsAge = 40 // eggs are 12 days old
+if baconAge <= 7 && eggsAge <= 21 {
+    print("eat bacon and eggs")
+} else {
+    if baconAge > 7 {
+        print( "bacon is bad")
+    }
+    if eggsAge > 21 {
+        print("eggs are bad")
+    }
+}
+
+```
+
 ***
 ## Question 6
 
@@ -80,7 +136,18 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+
+var year = 2015
+if year % 4 == 0{
+    if year % 100 == 0 && year % 400 != 0{
+        print( "\(year) is NOT a leap year")
+    } else {
+    print("Is a leap year")
+    }
+} else {
+        print( "\(year) is NOT a leap year")
+    }
+
 ```
 
 ***
@@ -93,7 +160,14 @@ let randomNum = Int.random(in: 0...100)
 
 // your code here
 ```
-
+```
+let randomNum = Int.random(in: 0...100)
+if randomNum <= 49 {
+    print("Heads \(randomNum)")
+} else{
+    print("Tails \(randomNum)")
+}
+```
 Hint: use an if/else block along with the `%` operator
 
 ***
@@ -109,6 +183,15 @@ var d = 4
 
 // your code here
 ```
+```
+var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+var smallest = min(a, b, c, d)
+print(smallest)
+```
 
 ***
 ## Question 9
@@ -123,7 +206,10 @@ d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
 ```
+```
+A , B , D , E
 
+```
 ***
 ## Question 10
 
@@ -143,7 +229,10 @@ d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
 ```
+```
+B, C
 
+```
 
 ***
 ## Question 11
@@ -171,7 +260,10 @@ c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
 ```
+```
+a,b,c,d
 
+```
 ***
 ## Question 13
 
@@ -193,6 +285,10 @@ print(a + b + c)
 
 ```
 
+```
+30
+````
+
 ***
 ## Question 14
 
@@ -206,9 +302,13 @@ let div2 = 11.0 / 4.0
 let isEqual = div == div2
 
 3. The value of isEqual is_____________________ (or write "isEqual will not compile")
-
-
 ```
+
+````
+1. 2
+2. 2.75
+3. will not compile
+````
 ***
 ## Question 15
 ```swift
@@ -223,8 +323,11 @@ a. n is a Float
 b. n is a Double
 c. n is a Decimal
 d. In is an Int
-
 ```
+```
+a , b
+```
+
 
 # Bonus 
 
